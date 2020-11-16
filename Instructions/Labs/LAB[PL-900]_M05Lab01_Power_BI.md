@@ -130,7 +130,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 15. Click **...** next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.
 
-16. Save work in progress by pressing **File \| Save** and entering a filename of your choice.
+16. Save work in progress by pressing **File \| Save** and enter the filename as **PowerBIReport**.
 
 ## Task #3: Create Chart and Time Visualizations
 
