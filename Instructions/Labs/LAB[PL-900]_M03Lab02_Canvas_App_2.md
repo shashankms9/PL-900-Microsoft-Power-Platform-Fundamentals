@@ -68,7 +68,7 @@ You will follow the below outline to design the canvas app:
     
     -   Check if **The cloud** is selected. 
     
-    -   Enter **[Your Last Name] Campus Security** for Name and click **Save**.
+    -   Enter **Campus Security[DeploymentId]** for Name and click **Save**.
         
     -   Click the **Back** arrow at the top left (below Power Apps) to return to the app.
 
