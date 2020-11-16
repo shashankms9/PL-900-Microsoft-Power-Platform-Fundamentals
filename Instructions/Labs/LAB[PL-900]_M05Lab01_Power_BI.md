@@ -180,9 +180,9 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 3. Select **New dashboard** on **Pin to dashboard** prompt.
 
-4. Enter **[Your Last Name] Campus Management** as a **Dashboard name**, press **Pin live**.
+4. Enter **Campus Management[DeploymentId]** as a **Dashboard name**, press **Pin live**.
 
-5. Select **My workspace** at the top, select **[Your Last Name] Campus Management** dashboard.
+5. Select **My workspace** at the top, select **Campus Management** dashboard.
 
 6. Test interactivity of the pie and bar charts displayed.
 
@@ -194,11 +194,11 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 3. Select **Pin visual**.
 
-4. Select **Existing dashboard**, select your **[Your Last Name] Campus Management** dashboard, press **Pin**.
+4. Select **Existing dashboard**, select your **Campus Management** dashboard, press **Pin**.
 
 5. Click **Exit Q&A**.
 
-Your **[Your Last Name] Campus Management** dashboard should be displayed. You may have to scroll down to see the new Q&A visual. 
+Your **Campus Management** dashboard should be displayed. You may have to scroll down to see the new Q&A visual. 
 
 Your dashboard should look similar to the following:
 
