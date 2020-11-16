@@ -42,7 +42,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 2. Select **Environments** and click **+New.**
 
-    - For **Name**, enter **[My Initials] Practice.** (Example: AJ Practice.)
+    - For **Name**, enter **Practice[DeploymentId]** (Example: Practice255365)
     
     - For **Type**, select **Trial** (do not select the Trial (subscription-based) option).
     
