@@ -161,7 +161,7 @@ Now, we will clone the view to create a new view for today's visits.
 
     -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
     
-    -   Enter **[Your Last Name] Campus Management** for Name and click **Next**.
+    -   Enter **Campus Management[DeploymentId]** for Name and click **Next**.
     
     -   Select **Use existing solution to create the App** checkbox
     
