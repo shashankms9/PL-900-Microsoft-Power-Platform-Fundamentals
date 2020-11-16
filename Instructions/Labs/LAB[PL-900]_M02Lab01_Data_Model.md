@@ -61,7 +61,7 @@ Your solution will contain several entities upon completion of all the customiza
 
     -   Select **Solutions** from the left menu and click **New Solution**.
 
-    -   Enter **[Your Last Name] Campus Management** for **Display Name**.
+    -   Enter **Campus Management[DeploymentId]** for **Display Name**.
 
 2.  Create Publisher
 
