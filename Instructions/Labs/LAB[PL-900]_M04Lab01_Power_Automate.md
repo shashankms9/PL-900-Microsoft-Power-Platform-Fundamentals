@@ -7,6 +7,13 @@ lab:
 # Module 4: Get Started with Power Automate
 ## Lab: How to build an automated solution
 
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
+
+While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+
 ## Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
@@ -52,7 +59,7 @@ The following have been identified as requirements you must implement to complet
 
     -   Click to open your **Campus Management** solution.
 
-2.  Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
+2.  Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *Current* and select **Common Data Service (Current Environment)** connector.
 
@@ -161,7 +168,7 @@ The following have been identified as requirements you must implement to complet
 
    -   Click to open your **Campus Management** solution.
 
-2. Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
+2. Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
 
