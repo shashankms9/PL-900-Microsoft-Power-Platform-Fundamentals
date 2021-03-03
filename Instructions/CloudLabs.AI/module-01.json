@@ -1,42 +1,10 @@
 [ {
-  "Name": "PL-900-Microsoft-Power-Platform-Fundamentals",
+  "Name": "Module 0: Course introduction",
   "Language": "English",
   "Files": [
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M00Lab00_Setup.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/tree/prodInstructions/CloudLabs.AI/LAB[PL-900]_M00Lab00_Setup.md",
       "Order": 1
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M02Lab01_Data_Model.md",
-      "Order": 2
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M03Lab01_Canvas_App_1.md",
-      "Order": 3
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M03Lab02_Canvas_App_2.md",
-      "Order": 4
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M03Lab03_Model_App.md",
-      "Order": 5
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M03Lab04_Portal_App.md",
-      "Order": 6
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M04Lab01_Power_Automate.md",
-      "Order": 7
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M05Lab01_Power_BI.md",
-      "Order": 8
-    },
-    {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-900-Microsoft-Power-Platform-Fundamentals/stage/Instructions/CloudLabs.AI/LAB%5BPL-900%5D_M06Lab01_PVA.md",
-      "Order": 9
     }
   ]
 } ]

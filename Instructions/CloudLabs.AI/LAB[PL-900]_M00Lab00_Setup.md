@@ -1,8 +1,14 @@
 
 Module 0: Course introduction
-=================================
 
 ## Lab: Validate lab environment
+
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
+
+While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 Scenario
 --------
@@ -17,7 +23,23 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 ## Exercise 1 – Setup
 
-### Task \#1 – Create environment
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
+
+### Task 1 - Acquire your Power Platform trial tenant
+
+1. Copy your **Microsoft 365 credentials** from the Authorized Lab Hoster.
+
+2. Navigate to <https://powerapps.microsoft.com> and click **Start free.**
+
+3. Under **Get started**, enter the email address from your Microsoft 365 credentials in the text box that says **Enter your work email address.**
+
+4. You see a prompt that you have an existing account with Microsoft. Select **Sign in.**
+
+5. Enter the password provided by the Authorized Lab Hoster. 
+
+6. Select **Yes** to stay signed in.
+
+### Task \#2 – Create environment
 
 1.  Access <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
 
@@ -55,7 +77,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
     -   Enter **Bellows College Visitors** as the portal **Name**
 
-    -   Provide a unique URL; **something**.powerappsportals.com (if the name has been taken, choose a different one)
+-   Provide a unique URL; **something[DeploymentId]**.powerappsportals.com (Example: something255365)
 
     -   Select a base portal **Language**
 

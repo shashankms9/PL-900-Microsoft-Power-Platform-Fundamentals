@@ -1,4 +1,3 @@
-
 # Module 5: Get Started with Power BI
 ## Lab: How to build a simple dashboard
 
@@ -37,6 +36,8 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 # Exercise \#1: Create Power BI Report 
 
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
+
 **Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
 
 ## Task \#1: Install Power BI Desktop / Prepare Power BI service
@@ -58,7 +59,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
     > If you do not have required permissions to install desktop applications or experience difficulties in running or configuring Power BI Desktop, complete the task steps below.
 
-4. Download [visits.pbix](../../Allfiles/visits.pbix) and save on your computer.
+4. You should have the **visits.pbix** file downloaded on your labvm (C:\AllFiles\PL-900-Microsoft-Power-Platform-Fundamentals-master\Allfiles). Download [visits.pbix](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/visits.pbix?raw=true) if you do not have it downloaded.
 
 5. Navigate to [https://app.powerbi.com/](https://app.powerbi.com/) and click **Sign in**. 
 
@@ -137,7 +138,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 4. Resize the pie chart using corner handles so that all chart components are visible.
 
-5. Click on the report outside of the pie chart to deselect it and select stacked column chart in **Visualizations** pane. 
+5. Click on the report outside of the pie chart to deselect it and select 100% stacked column chart in **Visualizations** pane. 
 
 6. Drag **Visit** field and drop it into **Values** target box.
 
@@ -177,7 +178,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 4. Enter **Campus Management[DeploymentId]** as a **Dashboard name**, press **Pin live**.
 
-5. Select **My workspace** at the top, select **Campus Management** dashboard.
+5. Select **My workspace** at the top, select **Campus Management[DeploymentId]** dashboard.
 
 6. Test interactivity of the pie and bar charts displayed.
 
@@ -189,11 +190,11 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 3. Select **Pin visual**.
 
-4. Select **Existing dashboard**, select your **Campus Management** dashboard, press **Pin**.
+4. Select **Existing dashboard**, select your **Campus Management[DeploymentId]** dashboard, press **Pin**.
 
 5. Click **Exit Q&A**.
 
-Your **Campus Management** dashboard should be displayed. You may have to scroll down to see the new Q&A visual.  
+Your **Campus Management[DeploymentId]** dashboard should be displayed. You may have to scroll down to see the new Q&A visual. 
 
 Your dashboard should look similar to the following:
 

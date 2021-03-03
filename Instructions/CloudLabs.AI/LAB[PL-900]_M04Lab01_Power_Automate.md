@@ -1,6 +1,12 @@
-
 # Module 4: Get Started with Power Automate
 ## Lab: How to build an automated solution
+
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
+
+While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 ## Scenario
 
@@ -47,15 +53,15 @@ The following have been identified as requirements you must implement to complet
 
     -   Click to open your **Campus Management** solution.
 
-2.  Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
+2.  Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *Current* and select **Common Data Service (Current Environment)** connector.
 
-4. Select the trigger **When a Record is Created, Updated or Deleted**.
+4. Select the trigger **When a Row is Added, Modified or Deleted**.
 
-   * Select **Create** for **Trigger condition**
+   * Select **Create** for **Change Type**
    
-   * Select **Visits** for **The entity name**
+   * Select **Visits** for **Table name**
    
    * Select **Organization** for **Scope**
    
@@ -65,17 +71,17 @@ The following have been identified as requirements you must implement to complet
 
 6. Search for *Current* and select **Common Data Service (Current Environment)** connector.
 
-7. Select **Get a record** action. 
+7. Select **Get a row by ID** action. 
 
-   * Select **Contacts** as **Entity name**
+   * Select **Contacts** as **Table name**
    
-   * In the **Item ID** field, select **Visitor (Value)** from the Dynamic content list.
+   * In the **Row ID** field, select **Visitor (Value)** from the Dynamic content list.
    
    * On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"Get the Visitor"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 8. Click **New Step**. This is the step that will create and send email to the visitor.
 
-9. Search for *mail*, select **Mail** connector and **Send an email notification** action 
+9. Search for *mail*, select **Mail** connector and **Send an email notification(V3)** action 
 
    * If asked to Accept terms and conditions for using this action, click **Accept**.
    
@@ -116,7 +122,7 @@ The following have been identified as requirements you must implement to complet
 
 3.  Leaving this tab open, navigate back to the previous tab with your flow. 
 
-4.  On the command bar, click **Test**. Select **I'll perform the trigger action** and then **Save & Test**.
+4.  On the command bar, click **Test**. Select **Manually** under Test Flow and then **Save & Test**.
 
 5.  Leaving the flow tab open, navigate back to the previous tab with the **Campus Staff** app.
 
@@ -156,15 +162,15 @@ The following have been identified as requirements you must implement to complet
 
    -   Click to open your **Campus Management** solution.
 
-2. Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
+2. Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
 
 4. Set **Interval** to **15 minutes**
 
-5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List records** action.
+5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List rows** action.
 
-   * Enter **Visits** as **Entity name**
+   * Enter **Visits** as **Table name**
    
    * Click **Show advanced options**
 
@@ -192,13 +198,13 @@ The following have been identified as requirements you must implement to complet
     
     * Search for *Current* and select **Common Data Service (Current Environment)** connector. 
     
-    * Select **Get a record** action.
+    * Select **Get a row by ID** action.
     
-    * Select **Buildings** as **Entity name**
+    * Select **Buildings** as **Table name**
     
-    * Select **Building (Value)** as **Item ID** from the Dynamic content
+    * Select **Building (Value)** as **Row ID** from the Dynamic content
     
-    * Click **...** beside **Get a record**, select **Rename**. Enter **Get building** as step name
+    * Click **...** beside **Get a row by ID**, select **Rename**. Enter **Get building** as step name
     
 9.  Retrieve Visitor data for related record
 
@@ -206,17 +212,17 @@ The following have been identified as requirements you must implement to complet
     
     * Search for *Current* and select **Common Data Service (Current Environment)** connector.
     
-    * Select **Get a record** action.
+    * Select **Get a row by ID** action.
     
-    * Select **Contacts** as **Entity name**
+    * Select **Contacts** as **Table name**
     
-    * Select **Visitor (Value)** as **Item ID** from the Dynamic content
+    * Select **Visitor (Value)** as **Row ID** from the Dynamic content
     
-    * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
+    * Click **...** beside **Get a row by ID**, select **Rename**. Enter **Get visitor** as step name
     
 11.  Send email notification
 
-     * Click **Add an action** inside the Apply to Each loop. Add **Send an email notification** action from **Mail** connection.
+     * Click **Add an action** inside the Apply to Each loop. Add **Send an email notification(V3)** action from **Mail** connection.
 
 12.  Enter your email address as **To**
 
@@ -256,19 +262,19 @@ Your flow will begin sending you emails (to the email you specified when creatin
    
    3. Actual Start has a value.
    
-   > **Note**: To view this data, navigate to make.powerapps.com in a new tab. Click Solutions on the left pane to locate your solution. Select the Visit entity, then select the Data tab. Click Active Visits in the top right-hand corner to display the view selector, then select All fields.
+   > **Note**: To view this data, navigate to make.powerapps.com in a new tab. Click Solutions on the left pane to locate your solution. Select the Visit entity, then select the Data tab. Click Active Visits in the top right-hand corner to display the view selector, then select All Columns.
    
 2. Navigate to your solution and locate the **Security Sweep** flow. Click the **...** and click **Edit**.
 
 3. When your flow opens, click **Test**.
 
-4. Select **I'll perform the trigger action**.
+4. Select **Manually** under Test Flow.
 
 5. Click **Test** and **Run Flow**.
 
 6. When flow competes, click **Done**. 
 
-7. Expand **Apply to each**, then expand the **Send an email notification** step. Check the **Subject**, **Email Body** values.
+7. Expand **Apply to each**, then expand the **Send an email notification(V3)** step. Check the **Subject**, **Email Body** values.
 
 8. Navigate to solution, click **...** next to the flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
 
