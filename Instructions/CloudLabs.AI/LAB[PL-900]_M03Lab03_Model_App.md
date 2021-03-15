@@ -1,4 +1,3 @@
-
 # Module 3: Get started with Power Apps
 ## Lab 3: How to build a model-driven app
 
@@ -47,6 +46,8 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 # Exercise \#1: Customize Views and Forms
 
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
+
 **Objective:** In this exercise, you will customize views and forms of the custom created entities that will be used in the model-driven app.
 
 ## Task \#1: Edit Visit Form
@@ -61,11 +62,12 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 5.  Click to open the **Visit** entity.
 
-6.  Select the **Forms** tab and click to open the **Main** form type. 
+6.  Select the Forms tab and then from the top left corner **Add form** drop down  select **Main Form** to open the Main form.
+Then expand main form and expand General, then expand General again under Tree view at the top left corner
 
     > By default, the form has two fields: Name (Primary Field) and Owner.
     
-7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
+7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names from +Form Field option at top left corner:
 
     * **Building**
     * **Visitor**
@@ -93,7 +95,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 In this task, we will modify default Active Visits view and create new view for today's visits.
 
-1.  Select the **Views** tab and click to open the **Active Visits** view.
+1.  From +Add subcomponents option select the **Views** tab  and then click on **Add** for Active visits to open the **Active Visits** view.
 
 2.  Add the following fields to the view by either clicking or dragging and dropping the fields:
 
@@ -107,7 +109,7 @@ In this task, we will modify default Active Visits view and create new view for 
 
 4.  Click the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
 
-5.  In the Properties panel on the right, click **Sort by ...** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
+5.  In the Active Visits panel on the right, click **Sort by ...** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
 
 6.  Resize the individual column widths to fit the data.
 
@@ -117,7 +119,7 @@ In this task, we will modify default Active Visits view and create new view for 
 
 Now, we will clone the view to create a new view for today's visits.
 
-9.  Press **Edit filters** link in the Properties panel.
+9.  Press **Edit filters** link in the Active Visits panel.
 
 10.  Click **Add**, select **Add row**.
 
@@ -248,7 +250,7 @@ Now, we will clone the view to create a new view for today's visits.
 
     -   Provide **First Name** as `John` and **Last Name** as `Doe`.
 
-    -   Provide your personal email as **Email**. This will be used in a future lab. 
+    -   Provide the email id provided with the lab as **Email**. This will be used in a future lab.(You can get the Emailid from Lab Environment tab->Username)  
     
     -   Click **Save and Close**.
 

@@ -7,6 +7,13 @@ lab:
 # Module 3: Get started with Power Apps
 ## Lab 2: How to build a canvas app, part 2
 
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
+
+While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.  
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+
 # Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
@@ -142,7 +149,7 @@ You will follow the below outline to design the canvas app:
    
     -   Change the View to **All fields**
    
-    -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
+    -   Locate a Visit record that does not have an Actual Start or Actual End value (i.e., those columns are blank). Select and copy the **Code** for this Visit.
 
 8.  Test the app
 

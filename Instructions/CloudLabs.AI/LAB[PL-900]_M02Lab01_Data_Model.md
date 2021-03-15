@@ -1,7 +1,5 @@
-
 # Module 2: Introduction to Common Data Service
 ## Lab: Data Modeling
-
 
 # Scenario
 
@@ -46,6 +44,8 @@ Your solution will contain several entities upon completion of all the customiza
 
 # Exercise \#1: Create Solution
 
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
+
 ## Task \#1: Create Solution and Publisher
 
 1.  Create Solution
@@ -56,7 +56,7 @@ Your solution will contain several entities upon completion of all the customiza
 
     -   Select **Solutions** from the left menu and click **New Solution**.
 
-   -   Enter **Campus Management[DeploymentId]** for **Display Name**.
+    -   Enter **Campus Management[DeploymentId]** for **Display Name** (Example:Campus Management255365).
 
 2.  Create Publisher
 
@@ -83,7 +83,7 @@ Your solution will contain several entities upon completion of all the customiza
 
 1.  Click to open your **Campus Management** solution you just created.
 
-2.  Click **Add Existing** and select **Entity**.
+2.  Click **Add Existing** and select **Table**.
 
 3.  Locate **Contact** and select it.
 
@@ -117,12 +117,12 @@ between the entities.
 
     * Sign in to <https://make.powerapps.com> (if you are not already signed in)
     
-    * Select **Solutions** and click to open the **[Your Last Name] Campus Management**
+    * Select **Solutions** and click to open the **Campus Management[DeploymentId]**
           solution you just created.
           
 2.  Create Building entity
 
-    -   Click **New** and select **Entity**.
+    -   Click **New** and select **Table**.
     
     -   Enter **Building** for **Display Name** 
     
@@ -140,7 +140,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 2. Create Visit entity
 
-   * Click **New** and select **Entity**.
+   * Click **New** and select **Table**.
    
    * Enter **Visit** for **Display Name** 
    
@@ -148,7 +148,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 3. Create Scheduled Start field
 
-   * Make sure you have the **Fields** tab selected and click **Add Field**.
+   * Make sure you have the **Visit** table selected and click **Add Column** from the top left corner.
    
    * Enter **Scheduled Start** for **Display Name**.
    
@@ -164,7 +164,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 4.  Create Scheduled End field
 
-    * Click **Add Field**.
+    * Click **Add Column**.
     
     * Enter **Scheduled End** for **Display Name**.
     
@@ -180,7 +180,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
 5.  Create Actual Start field
 
-    * Click **Add Field**.
+    * Click **Add Column**.
     
     * Enter **Actual Start** for **Display Name**.
     
@@ -196,7 +196,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
 6.  Create Actual End field
 
-    * Click **Add Field**.
+    * Click **Add Column**.
     
     * Enter **Actual End** for **Display Name**.
     
@@ -212,7 +212,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
 7.  Create Code field
 
-    * Click **Add Field**.
+    * Click **Add Column**.
     
     * Enter **Code** for **Display Name**.
     
@@ -222,7 +222,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-8.  Click **Save Entity**
+8.  Click **Save Table**
 
 ## Task #3: Create Relationships
 
@@ -248,7 +248,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-4.  Click **Save Entity**.
+4.  Click **Save Table**.
 
 5.  Select **Solutions** from the top menu and click **Publish all customizations.**
 
@@ -260,11 +260,11 @@ We would like to assign each visit a unique number that can be easily entered an
 
 In this task you will import a solution that contains the Power Automate flow required to complete data import.
 
-1. You should have the **DataImport_managed.zip** file store on your Desktop. Download [Data Import Solution](../../Allfiles/DataImport_managed.zip) if you do not.
+1. You should have the **DataImport_managed.zip** file downloaded on your labvm (C:\AllFiles\PL-900-Microsoft-Power-Platform-Fundamentals-master\Allfiles). Download [Data Import Solution](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/DataImport.zip?raw=true) if you do not.
 
 2. Sign in to <https://make.powerapps.com>.
 
-3. Select your **[my initials] Practice** environment at the top right, if it is not already selected.
+3. Select your **Practice[DeploymentId]** environment at the top right, if it is not already selected.
 
 4. Select **Solutions** in the left navigation panel.
 

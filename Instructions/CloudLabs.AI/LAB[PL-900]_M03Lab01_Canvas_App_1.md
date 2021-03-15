@@ -1,4 +1,3 @@
-
 # Module 3: Get started with Power Apps
 
 ## Lab: How to build a canvas app, Part 1
@@ -36,6 +35,8 @@ We will follow the below outline to design the canvas app:
 
 
 # Exercise \#1: Create Staff Canvas App
+
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
 
 **Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data.
 

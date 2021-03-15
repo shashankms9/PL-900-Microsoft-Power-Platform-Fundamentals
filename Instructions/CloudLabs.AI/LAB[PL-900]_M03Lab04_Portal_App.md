@@ -1,4 +1,3 @@
-
 # Module 3: Get started with Power Apps
 
 ## Lab 4: How to build a Power Apps portal

@@ -1,4 +1,3 @@
-
 # Module 6: Intro to Power Virtual Agents
 ## Lab: How to build a basic chatbot
 

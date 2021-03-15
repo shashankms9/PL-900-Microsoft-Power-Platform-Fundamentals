@@ -1,4 +1,3 @@
-
 # Module 3: Get started with Power Apps
 ## Lab 2: How to build a canvas app, part 2
 
@@ -36,6 +35,8 @@ You will follow the below outline to design the canvas app:
 
 # Exercise \#1: Create Security Canvas App
 
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
+
 **Objective:** In this exercise, you will create a canvas app.
 
 ## Task \#1: Create Canvas App
@@ -63,7 +64,7 @@ You will follow the below outline to design the canvas app:
     
     -   Check if **The cloud** is selected. 
     
-    -   Enter **Campus Staff[DeploymentId]** as the **Name**.
+    -   Enter **Campus Security[DeploymentId]** as the **Name** and click **Save**.
         
     -   Click the **Back** arrow at the top left (below Power Apps) to return to the app.
 
@@ -71,7 +72,7 @@ You will follow the below outline to design the canvas app:
 
     -   Click **View \| Data sources**
     
-    -   Click **See all entities**
+    -   Click **Click See all entities from +Add Data dropdown under the Data Tab.**
     
     -   Select **Visits** and wait for the Visit entity to display under the Data **In your app** section.
     
@@ -121,7 +122,7 @@ You will follow the below outline to design the canvas app:
    
     -   Click the **X** to close the Fields pane
    
-5.  While still selecting the form view, select the Advanced tab on the Properties pane. Select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
+5.  While still selecting the form view, select the Advanced tab on the Properties pane. Select **Item** property and enter `LookUp(Visits,' Code' = textCode.Text)` 
 
 6.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
@@ -133,11 +134,11 @@ You will follow the below outline to design the canvas app:
    
     -   Select **Data** tab
    
-    -   Open the View Selector in the top right by clicking the current View name, **Active Visits**
+    -   Open the View Selector in the top right by clicking the current View name, **Visits**
    
     -   Change the View to **All fields**
    
-    -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
+    -   Locate a Visit record that does not have an Actual Start or Actual End value (i.e., those columns are blank). Select and copy the **Code** for this Visit.
 
 8.  Test the app
 
@@ -159,7 +160,7 @@ In this task, we will create buttons for the user to check in and check out of t
    
     * In the properties pane, select the **Advanced** tab and select **OnChange** property
    
-    * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
+    * Enter the following expression `Set(Visit, LookUp(Visits,' Code' = textCode.Text))`
     
     > This will save the visit in a global variable when a user searches in the textCode searchbox. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
 
@@ -252,14 +253,14 @@ To perform the check in and check out process we need to update Common Data Serv
        {'Actual Start': Now()}
    );
    Refresh([@Visits]);
-   Set(Visit, LookUp(Visits, Code = textCode.Text));
+   Set(Visit, LookUp(Visits,' Code' = textCode.Text));
    ```
 
    This expression contains the following parts:
 
    * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
    * **Refresh([@Visits]);**. This expression refreshes the visit records as the underlying values have changed
-   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** This expression updates the *Visit* variable with fresh data from Common Data Service.
+   * **Set(Visit, LookUp(Visits,' Code' = textCode.Text));** This expression updates the *Visit* variable with fresh data from Common Data Service.
    
    > When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
 
@@ -277,7 +278,7 @@ To perform the check in and check out process we need to update Common Data Serv
        }
    );
    Refresh([@Visits]);
-   Set(Visit, LookUp(Visits, Code = textCode.Text));
+   Set(Visit, LookUp(Visits,' Code' = textCode.Text));
    ```
 
    When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit record will be set to Inactive, and the data will refresh.
