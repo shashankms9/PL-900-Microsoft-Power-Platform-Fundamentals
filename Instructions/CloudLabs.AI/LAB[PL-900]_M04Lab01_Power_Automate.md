@@ -167,7 +167,7 @@ The following have been identified as requirements you must implement to complet
    
    * Click **Show advanced options**
 
-   * Enter the following expression as **Filter Query**
+   * Enter the following expression as **Filter rows**
 
    ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
