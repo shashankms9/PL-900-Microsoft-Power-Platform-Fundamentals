@@ -222,17 +222,19 @@ Now, we will clone the view to create a new view for today's visits.
 
     > You will see the assets for the entities that were added to the sitemap are now in the application.
      
-11.  Click on **Save** then **Validate** to validate the changes done in the application. 
+11.  Click on **Save** on the App Designer
+
+12.  Click on **Validate** to validate the changes done in the application. 
 
     >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
      
-14.  Click **Save and Close** to close the app designer.
+13.  Click **Save and Close** to close the app designer.
 
-15.  Click **Done**.
+14.  Click **Done**.
 
-16.  Select **Solutions** and select **Publish all Customizations.**
+15.  Select **Solutions** and select **Publish all Customizations.**
 
-17.  Select **Apps** and your application should now be listed.
+16.  Select **Apps** and your application should now be listed.
 
 ## Task \#2: Test Application
 
