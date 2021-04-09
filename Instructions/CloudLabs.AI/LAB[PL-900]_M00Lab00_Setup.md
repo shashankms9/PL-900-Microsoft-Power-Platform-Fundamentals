@@ -24,7 +24,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 2. Navigate to <https://powerapps.microsoft.com> and click **Start free.**
 
-3. Under **Get started**, enter the email address from your Microsoft 365 credentials in the text box that says **Enter your work email address.**
+3. Under **Get started**, enter the email address from your Microsoft 365 credentials in the text box that says **Enter your work email address** and click on **signup**.
 
 4. You see a prompt that you have an existing account with Microsoft. Select **Sign in.**
 
@@ -70,7 +70,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
     -   Enter **Bellows College Visitors** as the portal **Name**
 
--   Provide a unique URL; **something[DeploymentId]**.powerappsportals.com (Example: something255365)
+    -   Provide a unique URL; **something[DeploymentId]**.powerappsportals.com (Example: something255365)
 
     -   Select a base portal **Language**
 
