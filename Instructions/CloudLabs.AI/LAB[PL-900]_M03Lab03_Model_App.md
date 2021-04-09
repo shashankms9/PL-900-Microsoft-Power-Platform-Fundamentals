@@ -222,7 +222,7 @@ Now, we will clone the view to create a new view for today's visits.
 
     > You will see the assets for the entities that were added to the sitemap are now in the application.
      
-11.  Click **Validate** to validate the changes done in the application. 
+11.  Click on **Save** then **Validate** to validate the changes done in the application. 
 
     >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
      
