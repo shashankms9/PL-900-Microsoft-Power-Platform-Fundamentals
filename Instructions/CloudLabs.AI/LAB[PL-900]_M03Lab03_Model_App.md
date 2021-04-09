@@ -89,7 +89,7 @@ Then expand main form and expand General, then expand General again under Tree v
 12.  Click **Publish** at the top right and wait for the publishing to complete.
 
 13.  Click **Back** at the top left of the screen. You should now be back to the
-     Visit entity Forms Tab.
+     Visit entity Views Tab.
 
 ## Task \#2: Edit Visit Views
 
