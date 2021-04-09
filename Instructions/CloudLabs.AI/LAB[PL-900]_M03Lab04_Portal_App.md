@@ -141,7 +141,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   In the properties pane (right side), enter in `Buildings List` in the **Name** field
 
-    -   In the **Entity** field, choose **Building (bc_building)** from the drop-down list
+    -   In the **Table** field, choose **Building (bc_building)** from the drop-down list
 
     -   In the **Views**, choose **Active Buildings**
 
@@ -183,7 +183,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
 Your app layout should look similar to the following structure:
 
-![Example portal](media/9-portallabresult.jpg)
+![Example portal](./media/9-portallabresult.png)
 
 # Challenges
 
