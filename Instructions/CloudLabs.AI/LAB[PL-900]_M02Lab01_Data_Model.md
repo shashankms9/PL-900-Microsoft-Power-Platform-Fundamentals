@@ -236,7 +236,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Select **Contact** for **Related (One)** 
     
-    * Enter **Visitor** for **Lookup field display name** 
+    * Enter **Visitor** for **Lookup column display name** 
     
     * Click **Done**.
     
@@ -322,7 +322,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 2. Click to open the **Visit** entity, then select the **Data** tab.
 
-3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data. 
+3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All Columns**. This will change the view that is being used to display the Visit data. 
 
     > If you do not see **Active Visits** due to smaller resolution, you should see an eye icon in the same location.
 
