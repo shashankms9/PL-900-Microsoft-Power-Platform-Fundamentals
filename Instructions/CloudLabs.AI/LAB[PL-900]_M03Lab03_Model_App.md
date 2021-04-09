@@ -95,7 +95,7 @@ Then expand main form and expand General, then expand General again under Tree v
 
 In this task, we will modify default Active Visits view and create new view for today's visits.
 
-1.  From +Add subcomponents option select the **Views** tab  and then click on **Add** for Active visits to open the **Active Visits** view.
+1.  Select the **Views** tab and click to open the **Active Visits** view
 
 2.  Add the following fields to the view by either clicking or dragging and dropping the fields:
 
