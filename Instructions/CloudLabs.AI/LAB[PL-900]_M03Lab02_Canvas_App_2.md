@@ -122,7 +122,7 @@ You will follow the below outline to design the canvas app:
    
     -   Click the **X** to close the Fields pane
    
-5.  While still selecting the form view, select the Advanced tab on the Properties pane. Select **Item** property and enter `LookUp(Visits,' Code' = textCode.Text)` 
+5.  While still selecting the form view, select the Advanced tab on the Properties pane. Select **Item** property and enter `LookUp(Visits,'Code' = textCode.Text)` 
 
 6.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
@@ -136,7 +136,7 @@ You will follow the below outline to design the canvas app:
    
     -   Open the View Selector in the top right by clicking the current View name, **Visits**
    
-    -   Change the View to **All fields**
+    -   Change the View to **All Columns**
    
     -   Locate a Visit record that does not have an Actual Start or Actual End value (i.e., those columns are blank). Select and copy the **Code** for this Visit.
 
@@ -160,7 +160,7 @@ In this task, we will create buttons for the user to check in and check out of t
    
     * In the properties pane, select the **Advanced** tab and select **OnChange** property
    
-    * Enter the following expression `Set(Visit, LookUp(Visits,' Code' = textCode.Text))`
+    * Enter the following expression `Set(Visit, LookUp(Visits,'Code' = textCode.Text))`
     
     > This will save the visit in a global variable when a user searches in the textCode searchbox. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
 
@@ -253,7 +253,7 @@ To perform the check in and check out process we need to update Common Data Serv
        {'Actual Start': Now()}
    );
    Refresh([@Visits]);
-   Set(Visit, LookUp(Visits,' Code' = textCode.Text));
+   Set(Visit, LookUp(Visits,'Code' = textCode.Text));
    ```
 
    This expression contains the following parts:

@@ -113,7 +113,7 @@ between the entities.
 
 ## Task #1: Create Building Entity and Fields
 
-1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
+1.  You should have Campus Management solution open in your browser. If not, open the Campus Management solution by following these steps:
 
     * Sign in to <https://make.powerapps.com> (if you are not already signed in)
     
@@ -126,7 +126,7 @@ between the entities.
     
     -   Enter **Building** for **Display Name** 
     
-    -   Click **Done**. This will start provisioning the entity in background while you can start adding other entities and fields.
+    -   Click **Create**. This will start provisioning the entity in background while you can start adding other entities and fields.
 
 ## Task #2: Create Visit Entity and Fields
 
@@ -144,7 +144,7 @@ We would like to assign each visit a unique number that can be easily entered an
    
    * Enter **Visit** for **Display Name** 
    
-   * Click **Done**. This will start provisioning the entity in background while you can start adding other fields.
+   * Click **Create**. This will start provisioning the entity in background while you can start adding other fields.
 
 3. Create Scheduled Start field
 
@@ -236,7 +236,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Select **Contact** for **Related (One)** 
     
-    * Enter **Visitor** for **Lookup field display name** 
+    * Enter **Visitor** for **Lookup column display name** 
     
     * Click **Done**.
     
@@ -322,7 +322,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 2. Click to open the **Visit** entity, then select the **Data** tab.
 
-3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data. 
+3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All Columns**. This will change the view that is being used to display the Visit data. 
 
     > If you do not see **Active Visits** due to smaller resolution, you should see an eye icon in the same location.
 

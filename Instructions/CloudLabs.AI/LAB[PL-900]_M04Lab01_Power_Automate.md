@@ -167,7 +167,7 @@ The following have been identified as requirements you must implement to complet
    
    * Click **Show advanced options**
 
-   * Enter the following expression as **Filter Query**
+   * Enter the following expression as **Filter rows**
 
    ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
@@ -221,23 +221,23 @@ The following have been identified as requirements you must implement to complet
 
 13.  Enter the following in the **Subject** field. **Full Name** is a dynamic content from the **Get visitor** step.
 
-   ```
-   {Full Name} overstayed their welcome
-   ```
+     ```
+     {Full Name} overstayed their welcome
+     ```
    
 14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step.
 
-   ```
-   There is an overstay in building {Name}
+     ```
+     There is an overstay in building {Name}
          
-   Best,
+     Best,
          
-   Campus Security
-   ```
+     Campus Security
+     ```
 
-17.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
+15.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
-18.  Press **Save**
+16.  Press **Save**
 
     Your flow should look approximately like the following:
 

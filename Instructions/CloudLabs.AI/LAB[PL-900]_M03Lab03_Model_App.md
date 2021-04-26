@@ -89,13 +89,13 @@ Then expand main form and expand General, then expand General again under Tree v
 12.  Click **Publish** at the top right and wait for the publishing to complete.
 
 13.  Click **Back** at the top left of the screen. You should now be back to the
-     Visit entity Forms Tab.
+     Visit entity Views Tab.
 
 ## Task \#2: Edit Visit Views
 
 In this task, we will modify default Active Visits view and create new view for today's visits.
 
-1.  From +Add subcomponents option select the **Views** tab  and then click on **Add** for Active visits to open the **Active Visits** view.
+1.  Select the **Views** tab and click to open the **Active Visits** view
 
 2.  Add the following fields to the view by either clicking or dragging and dropping the fields:
 
@@ -222,17 +222,19 @@ Now, we will clone the view to create a new view for today's visits.
 
     > You will see the assets for the entities that were added to the sitemap are now in the application.
      
-11.  Click **Validate** to validate the changes done in the application. 
+11.  Click on **Save** on the App Designer
+
+12.  Click on **Validate** to validate the changes done in the application. 
 
     >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
      
-14.  Click **Save and Close** to close the app designer.
+13.  Click **Save and Close** to close the app designer.
 
-15.  Click **Done**.
+14.  Click **Done**.
 
-16.  Select **Solutions** and select **Publish all Customizations.**
+15.  Select **Solutions** and select **Publish all Customizations.**
 
-17.  Select **Apps** and your application should now be listed.
+16.  Select **Apps** and your application should now be listed.
 
 ## Task \#2: Test Application
 
