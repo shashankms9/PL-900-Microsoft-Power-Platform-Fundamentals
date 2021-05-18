@@ -16,16 +16,16 @@ In part 2 of this lab, you will create design and build a Power Apps canvas app 
 You will follow the below outline to design the canvas app:
 
 -   Create the app using the phone form factor
--   Connect to Common Data Service as a data source
+-   Connect to Microsoft Dataverse as a data source
 -   Capture the input (visitor code) and locate the visitor record
 -   Configure a form viewer control to show the visitor information
--   Use a Common Data Service view to populate the gallery
+-   Use a Microsoft Dataverse view to populate the gallery
 -   Handle checking-in and checking-out process for a visitor
 
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -236,7 +236,7 @@ We would like to enable **Check Out** button when the visit record has been loca
 
 ## Task \#5: Complete Check In and Check Out Process
 
-To perform the check in and check out process we need to update Common Data Service visit data as following:
+To perform the check in and check out process we need to update Microsoft Dataverse visit data as following:
 
 * When visitor checks in, set *Actual Start* field to the current date and time
 * When visitor checks out, set *Actual End* field to the current date and time. 
@@ -260,7 +260,7 @@ To perform the check in and check out process we need to update Common Data Serv
 
    * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
    * **Refresh([@Visits]);**. This expression refreshes the visit records as the underlying values have changed
-   * **Set(Visit, LookUp(Visits,' Code' = textCode.Text));** This expression updates the *Visit* variable with fresh data from Common Data Service.
+   * **Set(Visit, LookUp(Visits,' Code' = textCode.Text));** This expression updates the *Visit* variable with fresh data from Microsoft Dataverse.
    
    > When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
 
@@ -278,7 +278,7 @@ To perform the check in and check out process we need to update Common Data Serv
        }
    );
    Refresh([@Visits]);
-   Set(Visit, LookUp(Visits,' Code' = textCode.Text));
+   Set(Visit, LookUp(Visits,'Code' = textCode.Text));
    ```
 
    When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit record will be set to Inactive, and the data will refresh.
