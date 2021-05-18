@@ -1,4 +1,4 @@
-# Module 2: Introduction to Common Data Service
+# Module 2: Introduction to Microsoft Dataverse
 ## Lab: Data Modeling
 
 # Scenario
@@ -9,13 +9,13 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you access your environment, create a Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab, you access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 -   R1 – Track the locations (buildings) of the campus visits
 -   R2 – Record basic information to identify and track the visitors 
 -   R3 – Schedule, record, and manage visits 
 
-Finally, you will import sample data into Common Data Service.
+Finally, you will import sample data into Microsoft Dataverse.
 
 # High-level lab steps
 
@@ -254,7 +254,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 # Exercise \#3: Import Data
 
-**Objective:** In this exercise you will import sample data into the Common Data Service database.
+**Objective:** In this exercise you will import sample data into the Microsoft Dataverse database.
 
 ## Task #1: Import solution
 
@@ -282,7 +282,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 7. Expand the **Select a connection** dropdown and select **+ New Connection**.
 
-8. The new browser window or tab will open. Select **Create** when prompted to create Common Data Service connection. Sign in if required to complete creating the connection.
+8. The new browser window or tab will open. Select **Create** when prompted to create Microsoft Dataverse connection. Sign in if required to complete creating the connection.
 
 9. Switch back to the previous tab where you were importing the solution.
 
