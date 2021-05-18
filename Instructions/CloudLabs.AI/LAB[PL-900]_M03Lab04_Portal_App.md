@@ -14,14 +14,14 @@ In this lab, you will provision a Power Apps portal and create a portals webpage
 
 You will follow the below outline to design the Power Apps portal:
 
-* Provision a Power Apps portal in the Common Data Service environment
+* Provision a Power Apps portal in the Microsoft Dataverse environment
 * Create and configure a webpage to show a list of the buildings
 * Create a new theme and apply it to the portal
 
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -29,7 +29,7 @@ You will follow the below outline to design the Power Apps portal:
 
 # Exercise \#1: Create a Portal Webpage
 
-**Objective:** In this exercise, you will create a new webpage that will display some static content as well as a list of buildings from the Common Data Service.
+**Objective:** In this exercise, you will create a new webpage that will display some static content as well as a list of buildings from the Microsoft Dataverse.
 
 ## Task \#1: Navigate to Portal
 
@@ -149,7 +149,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
     
 4.  Click **Browse website** to view the page. 
 
-    > You should see the list of Buildings from the Common Data Service appear on the webpage.
+    > You should see the list of Buildings from the Microsoft Dataverse appear on the webpage.
 
 # Exercise \#2: Change the Portal Theme
 
@@ -189,6 +189,6 @@ Your app layout should look similar to the following structure:
 
 * Create a different view of Buildings that just displays the Building Name. You will need to select **Browse website** from the Portal studio to see the changes.
 * On the toolbelt, click on the **Themes** icon and edit the CSS of your custom theme.
-* Create a page with the **Form** component and modify a **List** component to add or edit Common Data Service records with the form.
+* Create a page with the **Form** component and modify a **List** component to add or edit Microsoft Dataverse records with the form.
 * Enable **Entity Permissions** in a **List** component **Settings**, what happens to the data?
 * In the Portal studio, select the Source Code Editor icon `</>` to view the page source. If you are comfortable with HTML, make some modifications and view the results.
