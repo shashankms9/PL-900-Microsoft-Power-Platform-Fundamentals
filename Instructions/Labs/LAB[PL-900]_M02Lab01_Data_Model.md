@@ -1,11 +1,16 @@
 ---
 lab:
     title: 'Lab 1: Data Modeling'
-    module: 'Module 2: Introduction to Common Data Service'
+    module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
 # Module 2: Introduction to Common Data Service
 ## Lab: Data Modeling
+
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 
 # Scenario
@@ -16,7 +21,7 @@ Campus administration would like to modernize their visitor registration system 
 
 Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
 
-In this lab, you access your environment, create a Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab, you access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 -   R1 – Track the locations (buildings) of the campus visits
 -   R2 – Record basic information to identify and track the visitors 
@@ -84,11 +89,11 @@ Your solution will contain several entities upon completion of all the customiza
     
     -   Click **Create**.
 
-## Task \#2: Add Existing Entity
+## Task \#2: Add Existing Table
 
 1.  Click to open your **Campus Management** solution you just created.
 
-2.  Click **Add Existing** and select **Entity**.
+2.  Click **Add Existing** and select **Table**.
 
 3.  Locate **Contact** and select it.
 
@@ -116,7 +121,7 @@ Your solution will contain several entities upon completion of all the customiza
 **Objective:** In this exercise, you will create entities and add relationships
 between the entities.
 
-## Task #1: Create Building Entity and Fields
+## Task #1: Create Building Table and Column
 
 1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
 
@@ -127,13 +132,13 @@ between the entities.
           
 2.  Create Building entity
 
-    -   Click **New** and select **Entity**.
+    -   Click **New** and select **Table**.
     
-    -   Enter **Building** for **Display Name** 
+    -   Enter **Visit** for **Display Name** 
     
     -   Click **Done**. This will start provisioning the entity in background while you can start adding other entities and fields.
 
-## Task #2: Create Visit Entity and Fields
+## Task #2: Create Visit Table and Column
 
 The **Visit** entity will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
 
@@ -145,7 +150,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 2. Create Visit entity
 
-   * Click **New** and select **Entity**.
+   * Click **New** and select **Table**.
    
    * Enter **Visit** for **Display Name** 
    
@@ -153,7 +158,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 3. Create Scheduled Start field
 
-   * Make sure you have the **Fields** tab selected and click **Add Field**.
+   * Make sure you have the **Column** tab selected and click **Add Column**.
    
    * Enter **Scheduled Start** for **Display Name**.
    
@@ -167,9 +172,9 @@ We would like to assign each visit a unique number that can be easily entered an
    
    * Click **Done**.
 
-4.  Create Scheduled End field
+4.  Create Scheduled End column
 
-    * Click **Add Field**.
+    * Click **Add Column**.
     
     * Enter **Scheduled End** for **Display Name**.
     
@@ -183,9 +188,9 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-5.  Create Actual Start field
+5.  Create Actual Start column
 
-    * Click **Add Field**.
+    * Click **Add Column**.
     
     * Enter **Actual Start** for **Display Name**.
     
@@ -199,9 +204,9 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-6.  Create Actual End field
+6.  Create Actual End column
 
-    * Click **Add Field**.
+    * Click **Add column**.
     
     * Enter **Actual End** for **Display Name**.
     
@@ -215,9 +220,9 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-7.  Create Code field
+7.  Create Code column
 
-    * Click **Add Field**.
+    * Click **Add Column**.
     
     * Enter **Code** for **Display Name**.
     
@@ -227,7 +232,7 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-8.  Click **Save Entity**
+8.  Click **Save Table**
 
 ## Task #3: Create Relationships
 
@@ -253,13 +258,13 @@ We would like to assign each visit a unique number that can be easily entered an
     
     * Click **Done**.
     
-4.  Click **Save Entity**.
+4.  Click **Save Table**.
 
 5.  Select **Solutions** from the top menu and click **Publish all customizations.**
 
 # Exercise \#3: Import Data
 
-**Objective:** In this exercise you will import sample data into the Common Data Service database.
+**Objective:** In this exercise you will import sample data into the Dataverse database.
 
 ## Task #1: Import solution
 
