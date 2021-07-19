@@ -7,6 +7,11 @@ lab:
 # Module 4: Get Started with Power Automate
 ## Lab: How to build an automated solution
 
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+
 ## Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
@@ -27,7 +32,7 @@ The following have been identified as requirements you must implement to complet
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 * Campus Staff app created in **Module 3 Lab 2 – How to build a canvas app, part 2** (for testing)
 * John Doe contact created with a personal email address in **Module 3 Lab 4 - How to build a model-driven app** (for testing)
 
@@ -52,15 +57,15 @@ The following have been identified as requirements you must implement to complet
 
     -   Click to open your **Campus Management** solution.
 
-2.  Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
+2.  Click **New** and select **cloud Flow**. This will open the Power Automate flow editor in a new window.
 
-3. Search for *Current* and select **Common Data Service (Current Environment)** connector.
+3. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
 
-4. Select the trigger **When a Record is Created, Updated or Deleted**.
+4. Select the trigger **When a Row is Created, Updated or Deleted**.
 
    * Select **Create** for **Trigger condition**
    
-   * Select **Visits** for **The entity name**
+   * Select **Visits** for **Table name**
    
    * Select **Organization** for **Scope**
    
@@ -68,13 +73,13 @@ The following have been identified as requirements you must implement to complet
 
 5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
 
-6. Search for *Current* and select **Common Data Service (Current Environment)** connector.
+6. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
 
-7. Select **Get a record** action. 
+7. Select **Get a row by ID** action. 
 
-   * Select **Contacts** as **Entity name**
+   * Select **Contacts** as **Table name**
    
-   * In the **Item ID** field, select **Visitor (Value)** from the Dynamic content list.
+   * In the **Row ID** field, select **Visitor (Value)** from the Dynamic content list.
    
    * On this action, click the ellipsis (**...**) and click **Rename**. Rename this action **"Get the Visitor"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
@@ -161,7 +166,7 @@ The following have been identified as requirements you must implement to complet
 
    -   Click to open your **Campus Management** solution.
 
-2. Click **New** and select **Flow**. This will open the Power Automate flow editor in a new window.
+2. Click **New** and select **cloud Flow**. This will open the Power Automate flow editor in a new window.
 
 3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
 
@@ -169,11 +174,11 @@ The following have been identified as requirements you must implement to complet
 
 5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List records** action.
 
-   * Enter **Visits** as **Entity name**
+   * Enter **Visits** as **Table name**
    
    * Click **Show advanced options**
 
-   * Enter the following expression as **Filter Query**
+   * Enter the following expression as **Filter Rows**
 
    ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
@@ -195,7 +200,7 @@ The following have been identified as requirements you must implement to complet
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    * Search for *Current* and select **Common Data Service (Current Environment)** connector. 
+    * Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector. 
     
     * Select **Get a record** action.
     
@@ -209,13 +214,13 @@ The following have been identified as requirements you must implement to complet
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    * Search for *Current* and select **Common Data Service (Current Environment)** connector.
+    * Search for *Current* and select **Microsoft Dataversee (Current Environment)** connector.
     
-    * Select **Get a record** action.
+    * Select **Get a row by ID** action.
     
-    * Select **Contacts** as **Entity name**
+    * Select **Contacts** as **Table name**
     
-    * Select **Visitor (Value)** as **Item ID** from the Dynamic content
+    * Select **Visitor (Value)** as **Row ID** from the Dynamic content
     
     * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
     
