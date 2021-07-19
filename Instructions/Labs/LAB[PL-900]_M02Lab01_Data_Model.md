@@ -112,9 +112,9 @@ Your solution will contain several entities upon completion of all the customiza
 
     > You should have **1 View** and **1 Form** selected. 
     
-10.  Click **Add** again. This will add the Contact entity with the selected View and Form to the newly created solution. 
+10.  Click **Add** again. This will add the Contact table with the selected View and Form to the newly created solution. 
     
-11.  Your solution should now have one entity: Contact.
+11.  Your solution should now have one table: Contact.
 
 # Exercise \#2: Create Entities and Relationships
 
