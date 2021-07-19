@@ -130,17 +130,17 @@ between the entities.
     * Select **Solutions** and click to open the **[Your Last Name] Campus Management**
           solution you just created.
           
-2.  Create Building entity
+2.  Create Building Table
 
     -   Click **New** and select **Table**.
     
     -   Enter **Visit** for **Display Name** 
     
-    -   Click **Done**. This will start provisioning the entity in background while you can start adding other entities and fields.
+    -   Click **Done**. This will start provisioning the Table in background while you can start adding other entities and fields.
 
 ## Task #2: Create Visit Table and Column
 
-The **Visit** entity will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
+The **Visit** table will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
 
 We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
 
@@ -148,13 +148,13 @@ We would like to assign each visit a unique number that can be easily entered an
 
 1.  Select your **Campus Management** solution
 
-2. Create Visit entity
+2. Create Visit table
 
    * Click **New** and select **Table**.
    
    * Enter **Visit** for **Display Name** 
    
-   * Click **Done**. This will start provisioning the entity in background while you can start adding other fields.
+   * Click **Done**. This will start provisioning the table in background while you can start adding other fields.
 
 3. Create Scheduled Start field
 
@@ -236,7 +236,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 ## Task #3: Create Relationships
 
-1.  Ensure that you are still viewing the **Visit** entity of your **Campus Management** solution. If not, navigate there.
+1.  Ensure that you are still viewing the **Visit** table of your **Campus Management** solution. If not, navigate there.
 
 2.  Create Visit to Contact relationship
 
@@ -285,7 +285,7 @@ In this task you will import a solution that contains the Power Automate flow re
 >   There are missing dependencies. Install the following solutions before installing this one...
 >
 >   That message indicates that either the data model is not complete, the
->   publisher prefix is not **bc**, or the **Building** and **Visit** entity
+>   publisher prefix is not **bc**, or the **Building** and **Visit** table
 >   names differ from the names listed in the steps above.
 
 6. Press **Next**. You should be prompted to re-establish connections. 
@@ -330,7 +330,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 1. Navigate back to the previous Power Apps tab. Click **Done** on the popup. Select **Solutions** on the left navigation bar and open your **Campus Management** solution.
 
-2. Click to open the **Visit** entity, then select the **Data** tab.
+2. Click to open the **Visit** table, then select the **Data** tab.
 
 3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data. 
 
