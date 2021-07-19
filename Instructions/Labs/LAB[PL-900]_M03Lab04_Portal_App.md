@@ -8,6 +8,11 @@ lab:
 
 ## Lab 4: How to build a Power Apps portal
 
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+
 # Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
@@ -20,14 +25,14 @@ In this lab, you will provision a Power Apps portal and create a portals webpage
 
 You will follow the below outline to design the Power Apps portal:
 
-* Provision a Power Apps portal in the Common Data Service environment
+* Provision a Power Apps portal in the Dataverse environment
 * Create and configure a webpage to show a list of the buildings
 * Create a new theme and apply it to the portal
 
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -41,11 +46,13 @@ You will follow the below outline to design the Power Apps portal:
 
 1.  Navigate to <https://make.powerapps.com>.
 
-2.  Click on **Apps**
+2.  Verify that you are in your Practice Environment. If you are not, change the environment at the top right.
 
-3.  Locate the app that has the **Type** of **Portal**
+3.  Click on **Apps**
 
-4.  Click on the app name to open the portal
+4.  Locate the app that has the **Type** of **Portal**
+
+5.  Click on the app name to open the portal
 
     > You should be redirected to your portal website landing page with a welcome message
 
@@ -131,6 +138,8 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
     
 2.  Add a list component to the Building Directory page
 
+    -   Select the section with two columns.
+
     -   On the toolbelt (left side), select the **Components** icon
 
     -   Choose **One column section** from the **Section layout** area (a section will appear below the image and text on the webpage)
@@ -147,7 +156,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   In the properties pane (right side), enter in `Buildings List` in the **Name** field
 
-    -   In the **Entity** field, choose **Building (bc_building)** from the drop-down list
+    -   In the **Table** field, choose **Building (bc_building)** from the drop-down list
 
     -   In the **Views**, choose **Active Buildings**
 
@@ -155,7 +164,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
     
 4.  Click **Browse website** to view the page. 
 
-    > You should see the list of Buildings from the Common Data Service appear on the webpage.
+    > You should see the list of Buildings from your Dataverse database appear on the webpage.
 
 # Exercise \#2: Change the Portal Theme
 
@@ -195,6 +204,6 @@ Your app layout should look similar to the following structure:
 
 * Create a different view of Buildings that just displays the Building Name. You will need to select **Browse website** from the Portal studio to see the changes.
 * On the toolbelt, click on the **Themes** icon and edit the CSS of your custom theme.
-* Create a page with the **Form** component and modify a **List** component to add or edit Common Data Service records with the form.
+* Create a page with the **Form** component and modify a **List** component to add or edit Dataverse rows with the form.
 * Enable **Entity Permissions** in a **List** component **Settings**, what happens to the data?
 * In the Portal studio, select the Source Code Editor icon `</>` to view the page source. If you are comfortable with HTML, make some modifications and view the results.
