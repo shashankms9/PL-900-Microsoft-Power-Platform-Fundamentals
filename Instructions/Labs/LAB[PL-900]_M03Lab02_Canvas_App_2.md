@@ -7,6 +7,11 @@ lab:
 # Module 3: Get started with Power Apps
 ## Lab 2: How to build a canvas app, part 2
 
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+
 # Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
@@ -22,16 +27,16 @@ In part 2 of this lab, you will create design and build a Power Apps canvas app 
 You will follow the below outline to design the canvas app:
 
 -   Create the app using the phone form factor
--   Connect to Common Data Service as a data source
+-   Connect to Dataverse as a data source
 -   Capture the input (visitor code) and locate the visitor record
 -   Configure a form viewer control to show the visitor information
--   Use a Common Data Service view to populate the gallery
+-   Use a Dataverse view to populate the gallery
 -   Handle checking-in and checking-out process for a visitor
 
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -76,7 +81,7 @@ You will follow the below outline to design the canvas app:
 
     -   Click **View \| Data sources**
     
-    -   Click **See all entities**
+    -   Click **See all tables**
     
     -   Select **Visits** and wait for the Visit entity to display under the Data **In your app** section.
     
@@ -133,6 +138,8 @@ You will follow the below outline to design the canvas app:
 7.  Prepare to test the app
 
     -   Switch to the browser tab containing the solution
+
+    -   Click **Done** in the pop-up window
    
     -   Select **Visit** entity
    
@@ -240,7 +247,7 @@ We would like to enable **Check Out** button when the visit record has been loca
 
 ## Task \#5: Complete Check In and Check Out Process
 
-To perform the check in and check out process we need to update Common Data Service visit data as following:
+To perform the check in and check out process we need to update Dataverse visit data as following:
 
 * When visitor checks in, set *Actual Start* field to the current date and time
 * When visitor checks out, set *Actual End* field to the current date and time. 
@@ -315,7 +322,7 @@ Usability of a mobile app significantly improves when visual indicators are prov
 
 1. Select **Insert** tab
 
-2. Select **Icons \| Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
+2. Select **Icons \| Add**. Select an Icon. At this point it does not matter which icon we select as we want the value to be dynamic.
 
 3. Resize and place the icon to the left of the buttons
 
