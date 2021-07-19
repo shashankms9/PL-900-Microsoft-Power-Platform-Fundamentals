@@ -271,7 +271,7 @@ To perform the check in and check out process we need to update Dataverse visit 
 
    * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
    * **Refresh([@Visits]);**. This expression refreshes the visit records as the underlying values have changed
-   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** This expression updates the *Visit* variable with fresh data from Common Data Service.
+   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** This expression updates the *Visit* variable with fresh data from Dataverse.
    
    > When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
 
