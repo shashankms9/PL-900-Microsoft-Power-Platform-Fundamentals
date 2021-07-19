@@ -136,7 +136,7 @@ between the entities.
     
     -   Enter **Visit** for **Display Name** 
     
-    -   Click **Done**. This will start provisioning the Table in background while you can start adding other entities and fields.
+    -   Click **Done**. This will start provisioning the Table in background while you can start adding other tables and columns.
 
 ## Task #2: Create Visit Table and Column
 
@@ -154,9 +154,9 @@ We would like to assign each visit a unique number that can be easily entered an
    
    * Enter **Visit** for **Display Name** 
    
-   * Click **Done**. This will start provisioning the table in background while you can start adding other fields.
+   * Click **Done**. This will start provisioning the table in background while you can start adding other column.
 
-3. Create Scheduled Start field
+3. Create Scheduled Start column
 
    * Make sure you have the **Column** tab selected and click **Add Column**.
    
@@ -312,7 +312,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 3. If **Status** is **Off**, select **...** next to **Import Data** then select **Turn On**.
 
-   > **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
+   > **Important:** If you receive an error message, verify that the table and column you created match the instructions above.
 
 4. Open **Import Data** component. A new tab will open Power Automate. 
 
@@ -332,7 +332,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 2. Click to open the **Visit** table, then select the **Data** tab.
 
-3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data. 
+3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All colums**. This will change the view that is being used to display the Visit data. 
 
     > If you do not see **Active Visits** due to smaller resolution, you should see an eye icon in the same location.
 
