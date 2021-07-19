@@ -27,7 +27,7 @@ In this lab, you access your environment, create a Microsoft Dataverse database,
 -   R2 – Record basic information to identify and track the visitors 
 -   R3 – Schedule, record, and manage visits 
 
-Finally, you will import sample data into Common Data Service.
+Finally, you will import sample data into Microsoft Dataverse.
 
 # High-level lab steps
 
@@ -292,7 +292,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 7. Expand the **Select a connection** dropdown and select **+ New Connection**.
 
-8. The new browser window or tab will open. Select **Create** when prompted to create Common Data Service connection. Sign in if required to complete creating the connection.
+8. The new browser window or tab will open. Select **Create** when prompted to create Microsoft Dataverse. Sign in if required to complete creating the connection.
 
 9. Switch back to the previous tab where you were importing the solution.
 
