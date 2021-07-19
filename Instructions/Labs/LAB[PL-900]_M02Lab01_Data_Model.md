@@ -4,7 +4,7 @@ lab:
     module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# Module 2: Introduction to Common Data Service
+# Module 2: Introduction to Microsoft Dataverse
 ## Lab: Data Modeling
 
 ### Important Notice (Effective November 2020):
