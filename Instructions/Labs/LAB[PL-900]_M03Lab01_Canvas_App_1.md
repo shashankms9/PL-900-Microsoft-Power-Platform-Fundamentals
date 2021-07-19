@@ -8,6 +8,12 @@ lab:
 
 ## Lab: How to build a canvas app, Part 1
 
+
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
+
 # Scenario
 
 Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
@@ -31,7 +37,7 @@ We will follow the below outline to design the canvas app:
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -61,9 +67,9 @@ In this task, you will create a canvas app using the phone layout template based
 
     -   Click **New app** and select **Canvas**.
 
-    -   Select **Phone layout** under **Common Data Service**.
+    -   Select **Phone layout** under **Microsoft Dataverse (Legacy)**.
 
-3.  Select **Common Data Service** connection then click **Create**.
+3.  Select **Microsoft Dataverse** connection then click **Create**.
 
 4.  Select **Visits** table
 
@@ -113,8 +119,13 @@ In this task, you will configure the Detail form to view information about indiv
 
 8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
-    
-9.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+     >**Tip:** You can collapse each field by clicking the down arrow beside the field name.
+
+9.  Remove the **Created On** field by clicking the ellipses (**...**) beside the field name and selecting **Remove**. 
+
+10.  Close the **Fields** pane.
+  
+11.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task \#3: Configure Visits Edit Form 
 
@@ -164,7 +175,7 @@ In this task, you will configure the pre-generated gallery to display the title,
 
 4.  Replace the expression with the following `Min(150, BrowseGallery1.Height - 60)`. That will ensure sufficient space for additional information.
 
-5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery (hover over the app preview and click the pencil icon).
+5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery (however over the app preview and click the pencil icon).
 
 6.  Select the Date Time field.
 
