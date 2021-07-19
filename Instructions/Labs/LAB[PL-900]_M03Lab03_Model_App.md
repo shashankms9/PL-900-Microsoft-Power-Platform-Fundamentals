@@ -1,11 +1,16 @@
 ---
 lab:
-    title: 'Lab 4: How to build a model-driven app'
+    title: 'Lab 4:ow to build a Power Apps portal'
     module: 'Module 3: Get started with Power Apps'
 ---
 
 # Module 3: Get started with Power Apps
-## Lab 3: How to build a model-driven app
+## Lab 3: How to build a Power Apps portal
+
+### Important Notice (Effective November 2020):
+Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
+
+For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
 
 # Scenario
 
@@ -39,7 +44,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to Common Data Service**
+* Completion of **Module 2 Lab 1 - Introduction to  Microsoft Dataverse**
 
 ## Things to consider before you begin
 
