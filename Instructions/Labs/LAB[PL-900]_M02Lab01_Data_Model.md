@@ -89,7 +89,11 @@ Your solution will contain several entities upon completion of all the customiza
     
     -   Click **Create**.
 
-## Task \#2: Add Existing Table
+# Exercise \#2: Add Existing and Create New Tables
+
+**Objective:** In this exercise, you will add the standard Contact table and create new custom tables for Buildings and Visits in the solution. 
+
+## Task \#1: Add Existing Table
 
 1.  Click to open your **Campus Management** solution you just created.
 
@@ -116,12 +120,7 @@ Your solution will contain several entities upon completion of all the customiza
     
 11.  Your solution should now have one table: Contact.
 
-# Exercise \#2: Create Entities and Relationships
-
-**Objective:** In this exercise, you will create entities and add relationships
-between the entities.
-
-## Task #1: Create Building Table and Column
+## Task #2: Create Building Table and Column
 
 1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
 
@@ -134,11 +133,11 @@ between the entities.
 
     -   Click **New** and select **Table**.
     
-    -   Enter **Visit** for **Display Name** 
+    -   Enter **Building** for **Display Name** 
     
     -   Click **Done**. This will start provisioning the Table in background while you can start adding other tables and columns.
 
-## Task #2: Create Visit Table and Column
+## Task #3: Create Visit Table and Column
 
 The **Visit** table will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
 
@@ -234,7 +233,11 @@ We would like to assign each visit a unique number that can be easily entered an
     
 8.  Click **Save Table**
 
-## Task #3: Create Relationships
+# Exercise \#3: Create Relationships
+
+**Objective:** In this exercise, you will add relationships between the tables.
+
+## Task #1: Create Relationships
 
 1.  Ensure that you are still viewing the **Visit** table of your **Campus Management** solution. If not, navigate there.
 
@@ -262,7 +265,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 5.  Select **Solutions** from the top menu and click **Publish all customizations.**
 
-# Exercise \#3: Import Data
+# Exercise \#4: Import Data
 
 **Objective:** In this exercise you will import sample data into the Dataverse database.
 
