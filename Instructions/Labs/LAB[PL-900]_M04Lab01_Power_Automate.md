@@ -59,11 +59,11 @@ The following have been identified as requirements you must implement to complet
 
 2.  Click **New** and select **cloud Flow**. This will open the Power Automate flow editor in a new window.
 
-3. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
+3. Search for **Microsoft Dataverse (Current Environment)** connector.
 
 4. Select the trigger **When a Row is Created, Updated or Deleted**.
 
-   * Select **Create** for **Trigger condition**
+   * Select **Create** for **Change type**
    
    * Select **Visits** for **Table name**
    
@@ -73,7 +73,7 @@ The following have been identified as requirements you must implement to complet
 
 5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
 
-6. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
+6. Search **Microsoft Dataverse (Current Environment)** connector.
 
 7. Select **Get a row by ID** action. 
 
@@ -126,7 +126,7 @@ The following have been identified as requirements you must implement to complet
 
 3.  Leaving this tab open, navigate back to the previous tab with your flow. 
 
-4.  On the command bar, click **Test**. Select **I'll perform the trigger action** and then **Save & Test**.
+4.  On the command bar, click **Test**. Select **Manually** and then **Save & Test**.
 
 5.  Leaving the flow tab open, navigate back to the previous tab with the **Campus Staff** app.
 
@@ -172,7 +172,7 @@ The following have been identified as requirements you must implement to complet
 
 4. Set **Interval** to **15 minutes**
 
-5. Click **New step**. Search for *Current* and select **Common Data Service (Current Environment)** connector. Select **List records** action.
+5. Click **New step**. Search for *Current* and select **Microsoft Dataverse** connector. Select **List rows** action.
 
    * Enter **Visits** as **Table name**
    
@@ -200,13 +200,13 @@ The following have been identified as requirements you must implement to complet
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    * Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector. 
+    *  Select **Microsoft Dataverse (Current Environment)** connector. 
     
-    * Select **Get a record** action.
+    * Select **Get a row by ID** action.
     
-    * Select **Buildings** as **Entity name**
+    * Select **Buildings** as **Table name**
     
-    * Select **Building (Value)** as **Item ID** from the Dynamic content
+    * Select **Building (Value)** as **Row ID** from the Dynamic content
     
     * Click **...** beside **Get a record**, select **Rename**. Enter **Get building** as step name
     
@@ -272,7 +272,7 @@ Your flow will begin sending you emails (to the email you specified when creatin
 
 3. When your flow opens, click **Test**.
 
-4. Select **I'll perform the trigger action**.
+4. Select **Manually**.
 
 5. Click **Test** and **Run Flow**.
 
@@ -280,7 +280,7 @@ Your flow will begin sending you emails (to the email you specified when creatin
 
 7. Expand **Apply to each**, then expand the **Send an email notification** step. Check the **Subject**, **Email Body** values.
 
-8. Navigate to solution, click **...** next to the flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
+8. Select the back arrow to the Security Sweep flow details. Select **Turn off**  on the command bar. This is to prevent flow from executing on a schedule on the test system.
 
 # Challenges
 
