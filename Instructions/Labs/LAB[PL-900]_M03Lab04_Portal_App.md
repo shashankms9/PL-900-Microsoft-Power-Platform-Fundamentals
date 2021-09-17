@@ -40,7 +40,7 @@ You will follow the below outline to design the Power Apps portal:
 
 # Exercise \#1: Create a Portal Webpage
 
-**Objective:** In this exercise, you will create a new webpage that will display some static content as well as a list of buildings from the Common Data Service.
+**Objective:** In this exercise, you will create a new webpage that will display some static content as well as a list of buildings from the Dataverse.
 
 ## Task \#1: Navigate to Portal
 
