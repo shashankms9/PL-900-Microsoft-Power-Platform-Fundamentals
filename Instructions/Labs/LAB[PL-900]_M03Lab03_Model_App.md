@@ -1,11 +1,11 @@
 ---
 lab:
-    title: 'Lab 4:ow to build a Power Apps portal'
+    title: 'Lab 4:How to build a model-driven app'
     module: 'Module 3: Get started with Power Apps'
 ---
 
 # Module 3: Get started with Power Apps
-## Lab 3: How to build a Power Apps portal
+## Lab 3: How to build a model-driven app
 
 ### Important Notice (Effective November 2020):
 Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon.
@@ -75,7 +75,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
     > By default, the form has two fields: Name (Primary Field) and Owner.
     
-7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
+7.   Select **+ Form field** and add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
 
     * **Building**
     * **Visitor**
@@ -169,6 +169,8 @@ Now, we will clone the view to create a new view for today's visits.
     -   Enter **Campus Management[DeploymentId]** for Name and click **Next**.
     
     -   Select **Use existing solution to create the App** checkbox
+
+    -   Select **Next**
     
     -   Select your **Campus Management** solution
     
@@ -229,10 +231,14 @@ Now, we will clone the view to create a new view for today's visits.
 10.  Click **Save and Close** to close the sitemap editor. 
 
     > You will see the assets for the entities that were added to the sitemap are now in the application.
+    
+11. Click **Save** on the App Designer.
      
-11.  Click **Validate** to validate the changes done in the application. 
+12.  Click **Validate** to validate the changes done in the application. 
 
     >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
+    
+13. Click **Publish**
      
 14.  Click **Save and Close** to close the app designer.
 
