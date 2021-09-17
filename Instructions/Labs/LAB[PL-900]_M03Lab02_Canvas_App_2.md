@@ -80,10 +80,12 @@ You will follow the below outline to design the canvas app:
 3.  Connect to data source (Visits)
 
     -   Click **View \| Data sources**
+
+    -   Click **+ Add Data**
     
     -   Click **See all tables**
     
-    -   Select **Visits** and wait for the Visit entity to display under the Data **In your app** section.
+    -   Select **Visits** and wait for the Visit table to display under the Data **In your app** section.
     
 4.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
@@ -109,7 +111,7 @@ You will follow the below outline to design the canvas app:
     
 3.  Add a form view
 
-    -   On **Insert** tab click **Forms**  then select **Display**
+    -   On **Insert** tab click **Forms**  then select **Display** (you may need to click the down arrow on the right side of the ribbon to see Forms)
    
     -   Using size handles, position the form below the search textbox
    
@@ -141,13 +143,13 @@ You will follow the below outline to design the canvas app:
 
     -   Click **Done** in the pop-up window
    
-    -   Select **Visit** entity
+    -   Select **Visit** table
    
     -   Select **Data** tab
    
     -   Open the View Selector in the top right by clicking the current View name, **Active Visits**
    
-    -   Change the View to **All fields**
+    -   Change the View to **All column**
    
     -   Locate a Visit record that does not have an Actual Start or Actual End value. Select and copy the **Code** for this Visit.
 
@@ -239,7 +241,7 @@ We would like to enable **Check Out** button when the visit record has been loca
 
 6. Press **F5** to run the app. 
 
-7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled. 
+7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox (or click outside of the textbox). The **Check In** button should become enabled. 
 
 8. Clear the search box contents.
 
