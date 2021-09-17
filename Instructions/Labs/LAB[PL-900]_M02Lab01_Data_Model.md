@@ -73,6 +73,8 @@ Your solution will contain several entities upon completion of all the customiza
     -   Click on the **Publisher** dropdown and select **+ Publisher**
 
     -   In the window that pops up, enter **Bellows College** for **Display Name** 
+
+    -   Enter **BellowsCollege** for **Name**.
     
     -   Enter **bc** for **Prefix**
 
@@ -135,7 +137,7 @@ Your solution will contain several entities upon completion of all the customiza
     
     -   Enter **Building** for **Display Name** 
     
-    -   Click **Done**. This will start provisioning the Table in background while you can start adding other tables and columns.
+    -   Click **Save**. This will start provisioning the Table in background while you can start adding other tables and columns.
 
 ## Task #3: Create Visit Table and Column
 
