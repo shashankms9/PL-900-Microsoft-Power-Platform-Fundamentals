@@ -52,26 +52,24 @@ We will follow the below outline to design the canvas app:
 
 ## Task \#1: Create Canvas App
 
-In this task, you will create a canvas app using the phone layout template based on Common Data Service. Using Visits as a selected entity from Common Data Service, the template will generate a Gallery - View - Edit app to manage campus visits.
+In this task, you will create a canvas app using the phone layout template based on Microsoft Dataverse . Using Visits as a selected table from Dataverse, the template will generate a Gallery - View - Edit app to manage campus visits.
 
-1.  Open your Campus Management solution.
+1.  Start creating an app from data
 
     -   Sign in to <https://make.powerapps.com>
 
     -   Select your **environment** at the top right if it is not already set to
         your Practice environment.
 
-    -   Select **Apps**.
+    -   Select the **Dataverse** icon within **Start from data** on the Home screen.
 
-2.  Create new canvas application
+2.  Connect to your Visits table
 
-    -   Click **New app** and select **Canvas**.
-
-    -   Select **Phone layout** under **Microsoft Dataverse (Legacy)**.
+    -   Select **+ New connection**
 
 3.  Select **Microsoft Dataverse** connection then click **Create**.
 
-4.  Select **Visits** table
+4.  Locate and select **Visits** table
 
 5.  Click **Connect**
 
@@ -129,7 +127,7 @@ In this task, you will configure the Detail form to view information about indiv
 
 ## Task \#3: Configure Visits Edit Form 
 
-In this task, you will configure a form to edit information about individual visit records.
+In this task, you will configure a form to edit information about individual visit rows.
 
 1.  Expand **EditScreen1** under **Tree view**
 
@@ -171,7 +169,7 @@ In this task, you will configure the pre-generated gallery to display the title,
 
 2.  Select **BrowseGallery1**
 
-3.  Select **TemplateSize** property from in the Properties panel on the right
+3.  Select **TemplateSize** property from in the Advanced Properties panel on the right
 
 4.  Replace the expression with the following `Min(150, BrowseGallery1.Height - 60)`. That will ensure sufficient space for additional information.
 
@@ -250,7 +248,7 @@ In this exercise you will test the application and, once successful, you will ad
     
     -   Select a visit and verify that display form is working properly
     
-    -   Return to the gallery and press **+** to create a new visit. Verify that edit form contains required fields including visitor, building, and scheduled start and end dates.
+    -   Return to the gallery and press **+** to create a new visit. Verify that edit form contains required columns including visitor, building, and scheduled start and end dates.
     
     -   Fill in the information and submit. Verify that the new record appears in the gallery.
     
