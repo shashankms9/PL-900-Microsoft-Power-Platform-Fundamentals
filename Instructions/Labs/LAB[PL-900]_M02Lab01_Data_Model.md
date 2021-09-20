@@ -73,7 +73,9 @@ Your solution will contain several entities upon completion of all the customiza
 
     -   Click on the **Publisher** dropdown and select **+ Publisher**
 
-    -   In the window that pops up, enter **Bellows College** for **Display Name** 
+    -   In the window that pops up, enter **Bellows College** for **Display Name**
+
+    -   Enter **BellowsCollege** for **Name**.
     
     -   Enter **bc** for **Prefix**
 
