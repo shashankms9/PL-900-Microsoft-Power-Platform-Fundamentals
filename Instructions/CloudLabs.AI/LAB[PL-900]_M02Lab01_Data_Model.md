@@ -64,6 +64,8 @@ Your solution will contain several entities upon completion of all the customiza
 
     -   In the window that pops up, enter **Bellows College** for **Display Name** 
     
+    -   Enter **BellowsCollege** for **Name**.
+    
     -   Enter **bc** for **Prefix**
 
     -   Click **Save and Close**
@@ -126,7 +128,7 @@ between the entities.
     
     -   Enter **Building** for **Display Name** 
     
-    -   Click **Create**. This will start provisioning the entity in background while you can start adding other entities and fields.
+    -   Click **save**. This will start provisioning the entity in background while you can start adding other entities and fields.
 
 ## Task #2: Create Visit Entity and Fields
 
