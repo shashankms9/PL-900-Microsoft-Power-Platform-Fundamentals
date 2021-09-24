@@ -82,7 +82,7 @@ Then expand main form and expand General, then expand General again under Tree v
 
 9.  With the **Code** field still selected, check the checkbox for the **Read-only field** in the Properties panel.
 
-10.  Select **Owner** field. In the Properties panel, change the **Field label** to **Host**
+10.  Select **Owner** field. In the Properties panel, change the **label** to **Host**
 
 11.  Click **Save** at the top right and wait for the save to complete.
 
@@ -156,13 +156,15 @@ Now, we will clone the view to create a new view for today's visits.
     
 2.  Create the Model-Driven Application
 
-    -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
+    -   Click **New** and select **App** and then **Model-driven app**.
+
+    -   Select **Classic app designer**, click on **Create**. This will open a new tab
     
-    -   Enter **Campus Management[DeploymentId]** for Name and click **Next**.
+    -   Enter **Campus Management[DeploymentId]** for Name.
     
-    -   Select **Use existing solution to create the App** checkbox
+    -   Select **Use existing solution to create the App** checkbox, Click on **Next**.
     
-    -   Select your **Campus Management** solution
+    -   Select your **Campus Management** solution.
     
     -   Click **Done**
     
