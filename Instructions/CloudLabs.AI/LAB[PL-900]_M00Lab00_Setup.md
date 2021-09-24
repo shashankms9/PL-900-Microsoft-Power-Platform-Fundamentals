@@ -24,13 +24,15 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 2. Navigate to <https://powerapps.microsoft.com> and click **Start free.**
 
-3. Under **Get started**, enter the email address from your Microsoft 365 credentials in the text box that says **Enter your work email address** and click on **signup**.
+3. Under **Let's get you started**, enter the email address as provided in the environment tab in the text box that says **Enter your work email address** and click on **Next**.
 
 4. You see a prompt that you have an existing account with Microsoft. Select **Sign in.**
 
 5. Enter the password provided by the Authorized Lab Hoster. 
 
 6. Select **Yes** to stay signed in.
+
+7.  Under **Confirmation details**, Click on **Get Started**.
 
 ### Task \#2 – Create environment
 
