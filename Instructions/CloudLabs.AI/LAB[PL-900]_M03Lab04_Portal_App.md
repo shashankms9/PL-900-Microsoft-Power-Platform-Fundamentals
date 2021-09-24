@@ -165,7 +165,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     - In the **Access type** field, choose **Global access** from the drop-down list
 
-    - select the privileges, and click on **+Add roles**, select the **Administrator**, **Anonymous Users**, **Authenticated Users**. and click on **save**.
+    - Select the privileges, and click on **+Add roles**, select the **Administrator**, **Anonymous Users**, **Authenticated Users**. and click on **save**.
 
 # Exercise \#2: Change the Portal Theme
 
