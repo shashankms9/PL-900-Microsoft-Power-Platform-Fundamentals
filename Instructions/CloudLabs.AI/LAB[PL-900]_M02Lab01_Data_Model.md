@@ -60,7 +60,7 @@ Your solution will contain several entities upon completion of all the customiza
 
 2.  Create Publisher
 
-    -   Click on the **Publisher** dropdown and select **+ Publisher**
+    -   Click on the **+ Publisher**
 
     -   In the window that pops up, enter **Bellows College** for **Display Name** 
     
@@ -68,9 +68,7 @@ Your solution will contain several entities upon completion of all the customiza
     
     -   Enter **bc** for **Prefix**
 
-    -   Click **Save and Close**
-    
-    -   Click **Done** in the pop-up window.
+    -   Click **Save and Close**.
 
 3.  Complete the solution creation.
 
