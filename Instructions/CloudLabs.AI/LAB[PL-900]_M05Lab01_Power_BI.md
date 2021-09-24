@@ -98,13 +98,13 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 4. Select **Power Platform** on the left, then select **Microsoft Dataverse**, and press **Connect**.
 
-5. Paste the environment URL you copied earlier into the **Server URL** field, press **OK**.
+5. Paste the environment URL you copied earlier into the **Server URL** field(default **https://** will be added, remove that), press **OK**.
 
 6. Expand **Entities** node, select **bc_Building** and **bc_Visit** entities, click **Load**.
 
 7. Click **Model** icon on the left vertical toolbar.
 
-8. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between the two entities that Power BI will be able to use to display related data.
+8. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between the two entities that Power BI will be able to use to display related data. If already relationship was created ignore this step.
 
 9. Select **Report** icon on the left toolbar.
 
@@ -170,9 +170,9 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ## Task #2: Create Power BI Dashboard
 
-1. You should have the report open from the previous task.
+1. You should have the report not the dashboard open from the previous task.
 
-2. Select **Pin to a dashboard** on the menu. Depending on the layout you may need to press **...** to show additional menu items.
+2. Select **Pin to a dashboard** on the menu in the powerbi report. Depending on the layout you may need to press **...** to show additional menu items.
 
 3. Select **New dashboard** on **Pin to dashboard** prompt.
 
