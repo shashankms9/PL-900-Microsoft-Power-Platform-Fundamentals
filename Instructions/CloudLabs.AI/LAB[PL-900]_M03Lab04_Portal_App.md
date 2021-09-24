@@ -151,7 +151,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     > You should see the list of Buildings from the Microsoft Dataverse appear on the webpage.
 
-5. if you find an error saying that donot have permission to view the list, follow the step Else ignore this step.
+5. If you find an error saying that donot have permission to view the list, follow the step Else ignore this step.
 
     - Navigate back to the Building Directory page 
 
