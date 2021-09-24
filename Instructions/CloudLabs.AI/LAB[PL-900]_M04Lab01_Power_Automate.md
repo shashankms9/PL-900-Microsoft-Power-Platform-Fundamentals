@@ -74,11 +74,13 @@ The following have been identified as requirements you must implement to complet
 
 8. Click **New Step**. This is the step that will create and send email to the visitor.
 
-9. Search for *mail*, select **Mail** connector and **Send an email notification(V3)** action 
+9. Search for *OUTLOOK*, select **OUTLOOK.COM** connector and **Send an email(V2)** action 
+
+   * If **To** field, asked to Sign in then sign in with your personal microsoft account.
 
    * If asked to Accept terms and conditions for using this action, click **Accept**.
    
-   * Select **To** field, select **Email** from the Dynamic content list. Notice that it is beneath the **Get the Visitor** header. This means you are selecting the Email that is related to the Visitor that you looked up in the previous step. 
+   * Select **To** field, Provide the same mail which you signed in with your personal account. Notice that it is beneath the **Get the Visitor** header. This means you are selecting the Email that is related to the Visitor that you looked up in the previous step. 
 
    * Enter **Your scheduled visit to Bellows College** in the **Subject** field.
 
@@ -215,7 +217,7 @@ The following have been identified as requirements you must implement to complet
     
 11.  Send email notification
 
-     * Click **Add an action** inside the Apply to Each loop. Add **Send an email notification(V3)** action from **Mail** connection.
+     * Click **Add an action** inside the Apply to Each loop. Add **Send an email(V2)** action from **outlook.com** connection. 
 
 12.  Enter your email address as **To**
 
