@@ -151,6 +151,22 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     > You should see the list of Buildings from the Microsoft Dataverse appear on the webpage.
 
+5. if you find an error saying that donot have permission to view the list, follow the step Else ignore this step.
+
+    - Navigate back to the Building Directory page 
+
+    - Select the list component on the canvas
+
+    - In the properties pane (right side), Click on **Manage table Permissions**, Click on **+New permission**.
+
+    - Enter the Name in the **Name** field
+
+    - In the **Table** field, choose **Building (bc_building)** from the drop-down list
+
+    - In the **Access type** field, choose **Global access** from the drop-down list
+
+    - select the privileges, and click on **+Add roles**, select the **Administrator**, **Anonymous Users**, **Authenticated Users**. and click on **save**.
+
 # Exercise \#2: Change the Portal Theme
 
 **Objective:** In this exercise, you will create a new theme that will alter the color scheme of your portal. 
