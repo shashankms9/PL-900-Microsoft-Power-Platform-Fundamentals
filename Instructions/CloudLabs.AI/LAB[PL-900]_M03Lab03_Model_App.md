@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Lab 4:How to build a model-driven app'
-    module: 'Module 3: Get started with Power Apps'
----
-
 # Module 3: Get started with Power Apps
 ## Lab 3: How to build a model-driven app
 
@@ -39,7 +33,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 ## Prerequisites
 
 * Completion of **Module 0 Lab 0 - Validate lab environment**
-* Completion of **Module 2 Lab 1 - Introduction to  Microsoft Dataverse**
+* Completion of **Module 2 Lab 1 - Introduction to Microsoft Dataverse**
 
 ## Things to consider before you begin
 
@@ -51,6 +45,8 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 
 # Exercise \#1: Customize Views and Forms
+
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
 
 **Objective:** In this exercise, you will customize views and forms of the custom created entities that will be used in the model-driven app.
 
@@ -66,11 +62,12 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 5.  Click to open the **Visit** entity.
 
-6.  Select the **Forms** tab and click to open the **Main** form type. 
+6.  Select the Forms tab and then from the top left corner **Add form** drop down  select **Main Form** to open the Main form.
+Then expand main form and expand General, then expand General again under Tree view at the top left corner
 
     > By default, the form has two fields: Name (Primary Field) and Owner.
     
-7.   Select **+ Form field** and add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names:
+7.  Add the following fields below the **Owner** field by dragging fields to the form or simply clicking field names from +Form Field option at top left corner:
 
     * **Building**
     * **Visitor**
@@ -85,20 +82,20 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 9.  With the **Code** field still selected, check the checkbox for the **Read-only field** in the Properties panel.
 
-10.  Select **Owner** field. In the Properties panel, change the **Field label** to **Host**
+10.  Select **Owner** field. In the Properties panel, change the **label** to **Host**
 
 11.  Click **Save** at the top right and wait for the save to complete.
 
 12.  Click **Publish** at the top right and wait for the publishing to complete.
 
 13.  Click **Back** at the top left of the screen. You should now be back to the
-     Visit entity Forms Tab.
+     Visit entity Views Tab.
 
 ## Task \#2: Edit Visit Views
 
 In this task, we will modify default Active Visits view and create new view for today's visits.
 
-1.  Select the **Views** tab and click to open the **Active Visits** view.
+1.  Select the **Views** tab and click to open the **Active Visits** view
 
 2.  Add the following fields to the view by either clicking or dragging and dropping the fields:
 
@@ -112,7 +109,7 @@ In this task, we will modify default Active Visits view and create new view for 
 
 4.  Click the **Name** column and select **Remove**. Field **Name** will now be removed from the view.
 
-5.  In the Properties panel on the right, click **Sort by ...** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
+5.  In the Active Visits panel on the right, click **Sort by ...** and select **Scheduled Start**. Click on **Scheduled Start** again to change the order to descending (new visits on top).
 
 6.  Resize the individual column widths to fit the data.
 
@@ -122,7 +119,7 @@ In this task, we will modify default Active Visits view and create new view for 
 
 Now, we will clone the view to create a new view for today's visits.
 
-9.  Press **Edit filters** link in the Properties panel.
+9.  Press **Edit filters** link in the Active Visits panel.
 
 10.  Click **Add**, select **Add row**.
 
@@ -134,7 +131,7 @@ Now, we will clone the view to create a new view for today's visits.
 
 14.  Add **Actual Start** and **Actual End** fields to the view. 
 
-    > **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
+   **Note:** Since we no longer filter on the view status, we will get all today's visits including completed ones. These fields will help to differentiate completed visits and visits in progress.
 
 15.  Click on the **dropdown arrow** by the Save button (be careful not to press the button itself) and select **Save As**.
 
@@ -159,15 +156,15 @@ Now, we will clone the view to create a new view for today's visits.
     
 2.  Create the Model-Driven Application
 
-    -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
-    
-    -   Enter **Campus Management[DeploymentId]** for Name and click **Next**.
-    
-    -   Select **Use existing solution to create the App** checkbox
+    -   Click **New** and select **App** and then **Model-driven app**.
 
-    -   Select **Next**
+    -   Select **Classic app designer**, click on **Create**. This will open a new tab
     
-    -   Select your **Campus Management** solution
+    -   Enter **Campus Management[DeploymentId]** for Name.
+    
+    -   Select **Use existing solution to create the App** checkbox, Click on **Next**.
+    
+    -   Select your **Campus Management** solution.
     
     -   Click **Done**
     
@@ -226,22 +223,20 @@ Now, we will clone the view to create a new view for today's visits.
 10.  Click **Save and Close** to close the sitemap editor. 
 
     > You will see the assets for the entities that were added to the sitemap are now in the application.
-    
-11. Click **Save** on the App Designer.
      
-12.  Click **Validate** to validate the changes done in the application. 
+11.  Click on **Save** on the App Designer
+
+12.  Click on **Validate** to validate the changes done in the application. 
 
     >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
-    
-13. Click **Publish**
      
-14.  Click **Save and Close** to close the app designer.
+13.  Click **Save and Close** to close the app designer.
 
-15.  Click **Done**.
+14.  Click **Done**.
 
-16.  Select **Solutions** and select **Publish all Customizations.**
+15.  Select **Solutions** and select **Publish all Customizations.**
 
-17.  Select **Apps** and your application should now be listed.
+16.  Select **Apps** and your application should now be listed.
 
 ## Task \#2: Test Application
 
@@ -259,7 +254,7 @@ Now, we will clone the view to create a new view for today's visits.
 
     -   Provide **First Name** as `John` and **Last Name** as `Doe`.
 
-    -   Provide your personal email as **Email**. This will be used in a future lab. 
+    -   Provide the email id provided with the lab as **Email**. This will be used in a future lab.(You can get the Emailid from Lab Environment tab->Username)  
     
     -   Click **Save and Close**.
 

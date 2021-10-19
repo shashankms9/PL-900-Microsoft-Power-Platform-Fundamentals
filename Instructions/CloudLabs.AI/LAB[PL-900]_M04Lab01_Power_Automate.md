@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Lab 6: How to build an automated solution'
-    module: 'Module 4: Get Started with Power Automate'
----
-
 # Module 4: Get Started with Power Automate
 ## Lab: How to build an automated solution
 
@@ -54,11 +48,11 @@ The following have been identified as requirements you must implement to complet
 
 2.  Click **New** and select **Cloud flow**. This will open the Power Automate flow editor in a new window.
 
-3. Search for **Microsoft Dataverse (Current Environment)** connector.
+3. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
 
-4. Select the trigger **When a Row is Created, Updated or Deleted**.
+4. Select the trigger **When a Row is Added, Modified or Deleted**.
 
-   * Select **Create** for **Change type**
+   * Select **Create** for **Change Type**
    
    * Select **Visits** for **Table name**
    
@@ -68,7 +62,7 @@ The following have been identified as requirements you must implement to complet
 
 5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
 
-6. Search **Microsoft Dataverse (Current Environment)** connector.
+6. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
 
 7. Select **Get a row by ID** action. 
 
@@ -80,11 +74,13 @@ The following have been identified as requirements you must implement to complet
 
 8. Click **New Step**. This is the step that will create and send email to the visitor.
 
-9. Search for *mail*, select **Mail** connector and **Send an email notification** action 
+9. Search for *OUTLOOK*, select **OUTLOOK.COM** connector and **Send an email(V2)** action 
+
+   * If **To** field, asked to Sign in then sign in with your personal microsoft account.
 
    * If asked to Accept terms and conditions for using this action, click **Accept**.
    
-   * Select **To** field, select **Email** from the Dynamic content list. Notice that it is beneath the **Get the Visitor** header. This means you are selecting the Email that is related to the Visitor that you looked up in the previous step. 
+   * Select **To** field, Provide the same mail which you signed in with your personal account. Notice that it is beneath the **Get the Visitor** header. This means you are selecting the Email that is related to the Visitor that you looked up in the previous step. 
 
    * Enter **Your scheduled visit to Bellows College** in the **Subject** field.
 
@@ -121,7 +117,7 @@ The following have been identified as requirements you must implement to complet
 
 3.  Leaving this tab open, navigate back to the previous tab with your flow. 
 
-4.  On the command bar, click **Test**. Select **Manually** and then **Save & Test**.
+4.  On the command bar, click **Test**. Select **Manually** under Test Flow and then **Save & Test**.
 
 5.  Leaving the flow tab open, navigate back to the previous tab with the **Campus Staff** app.
 
@@ -167,13 +163,13 @@ The following have been identified as requirements you must implement to complet
 
 4. Set **Interval** to **15 minutes**
 
-5. Click **New step**. Search for *Current* and select **Microsoft Dataverse** connector. Select **List rows** action.
+5. Click **New step**. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector. Select **List rows** action.
 
    * Enter **Visits** as **Table name**
    
    * Click **Show advanced options**
 
-   * Enter the following expression as **Filter Rows**
+   * Enter the following expression as **Filter rows**
 
    ```
      statecode eq 0 and bc_actualstart ne null and bc_actualend eq null and Microsoft.Dynamics.CRM.OlderThanXMinutes(PropertyName='bc_scheduledend',PropertyValue=15)
@@ -195,7 +191,7 @@ The following have been identified as requirements you must implement to complet
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    *  Select **Microsoft Dataverse (Current Environment)** connector. 
+    * Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector. 
     
     * Select **Get a row by ID** action.
     
@@ -203,13 +199,13 @@ The following have been identified as requirements you must implement to complet
     
     * Select **Building (Value)** as **Row ID** from the Dynamic content
     
-    * Click **...** beside **Get a record**, select **Rename**. Enter **Get building** as step name
+    * Click **...** beside **Get a row by ID**, select **Rename**. Enter **Get building** as step name
     
 9.  Retrieve Visitor data for related record
 
     * Click **Add an action** inside the Apply to Each loop.
     
-    * Search for *Current* and select **Microsoft Dataversee (Current Environment)** connector.
+    * Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
     
     * Select **Get a row by ID** action.
     
@@ -217,33 +213,33 @@ The following have been identified as requirements you must implement to complet
     
     * Select **Visitor (Value)** as **Row ID** from the Dynamic content
     
-    * Click **...** beside **Get a record**, select **Rename**. Enter **Get visitor** as step name
+    * Click **...** beside **Get a row by ID**, select **Rename**. Enter **Get visitor** as step name
     
 11.  Send email notification
 
-     * Click **Add an action** inside the Apply to Each loop. Add **Send an email notification** action from **Mail** connection.
+     * Click **Add an action** inside the Apply to Each loop. Add **Send an email(V2)** action from **outlook.com** connection. 
 
 12.  Enter your email address as **To**
 
 13.  Enter the following in the **Subject** field. **Full Name** is a dynamic content from the **Get visitor** step.
 
-   ```
-   {Full Name} overstayed their welcome
-   ```
+     ```
+     {Full Name} overstayed their welcome
+     ```
    
 14.  Enter the following in the **Body** field. **Name** is a dynamic content from **Get building** step.
 
-   ```
-   There is an overstay in building {Name}
+     ```
+     There is an overstay in building {Name}
          
-   Best,
+     Best,
          
-   Campus Security
-   ```
+     Campus Security
+     ```
 
-17.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
+15.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
-18.  Press **Save**
+16.  Press **Save**
 
     Your flow should look approximately like the following:
 
@@ -261,21 +257,21 @@ Your flow will begin sending you emails (to the email you specified when creatin
    
    3. Actual Start has a value.
    
-   > **Note**: To view this data, navigate to make.powerapps.com in a new tab. Click Solutions on the left pane to locate your solution. Select the Visit entity, then select the Data tab. Click Active Visits in the top right-hand corner to display the view selector, then select All fields.
+   > **Note**: To view this data, navigate to make.powerapps.com in a new tab. Click Solutions on the left pane to locate your solution. Select the Visit entity, then select the Data tab. Click Active Visits in the top right-hand corner to display the view selector, then select All Columns.
    
 2. Navigate to your solution and locate the **Security Sweep** flow. Click the **...** and click **Edit**.
 
 3. When your flow opens, click **Test**.
 
-4. Select **Manually**.
+4. Select **Manually** under Test Flow.
 
 5. Click **Test** and **Run Flow**.
 
 6. When flow competes, click **Done**. 
 
-7. Expand **Apply to each**, then expand the **Send an email notification** step. Check the **Subject**, **Email Body** values.
+7. Expand **Apply to each**, then expand the **Send an email notification(V3)** step. Check the **Subject**, **Email Body** values.
 
-8. Select the back arrow to the Security Sweep flow details. Select **Turn off**  on the command bar. This is to prevent flow from executing on a schedule on the test system.
+8. Navigate to solution, click **...** next to the flow, select **Turn off**. This is to prevent flow from executing on a schedule on the test system.
 
 # Challenges
 

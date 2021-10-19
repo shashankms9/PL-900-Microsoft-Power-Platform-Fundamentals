@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Lab 3: How to build a canvas app, part 2'
-    module: 'Module 3: Get started with Power Apps'
----
-
 # Module 3: Get started with Power Apps
 ## Lab 2: How to build a canvas app, part 2
 
@@ -22,10 +16,10 @@ In part 2 of this lab, you will create design and build a Power Apps canvas app 
 You will follow the below outline to design the canvas app:
 
 -   Create the app using the phone form factor
--   Connect to Dataverse as a data source
+-   Connect to Microsoft Dataverse as a data source
 -   Capture the input (visitor code) and locate the visitor record
 -   Configure a form viewer control to show the visitor information
--   Use a Dataverse view to populate the gallery
+-   Use a Microsoft Dataverse view to populate the gallery
 -   Handle checking-in and checking-out process for a visitor
 
 ## Prerequisites
@@ -40,6 +34,8 @@ You will follow the below outline to design the canvas app:
 -   What should happen if the visitor arrives outside of the scheduled hours 
 
 # Exercise \#1: Create Security Canvas App
+
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
 
 **Objective:** In this exercise, you will create a canvas app.
 
@@ -68,19 +64,17 @@ You will follow the below outline to design the canvas app:
     
     -   Check if **The cloud** is selected. 
     
-    -   Enter **Campus Security[DeploymentId]** for Name and click **Save**.
+    -   Enter **Campus Security[DeploymentId]** as the **Name** and click **Save**.
         
     -   Click the **Back** arrow at the top left (below Power Apps) to return to the app.
 
 3.  Connect to data source (Visits)
 
     -   Click **View \| Data sources**
-
-    -   Click **+ Add Data**
     
-    -   Click **See all tables**
+    -   Click **Click See all entities from +Add Data dropdown under the Data Tab.**
     
-    -   Select **Visits** and wait for the Visit table to display under the Data **In your app** section.
+    -   Select **Visits** and wait for the Visit entity to display under the Data **In your app** section.
     
 4.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
@@ -106,7 +100,7 @@ You will follow the below outline to design the canvas app:
     
 3.  Add a form view
 
-    -   On **Insert** tab click **Forms**  then select **Display** (you may need to click the down arrow on the right side of the ribbon to see Forms)
+    -   On **Insert** tab click **Forms**  then select **Display**
    
     -   Using size handles, position the form below the search textbox
    
@@ -128,23 +122,21 @@ You will follow the below outline to design the canvas app:
    
     -   Click the **X** to close the Fields pane
    
-5.  While still selecting the form view, select the Advanced tab on the Properties pane. Select **Item** property and enter `LookUp(Visits, Code = textCode.Text)` 
+5.  While still selecting the form view, select the Advanced tab on the Properties pane. Select **Item** property and enter `LookUp(Visits,'Code' = textCode.Text)` 
 
 6.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 7.  Prepare to test the app
 
     -   Switch to the browser tab containing the solution
-
-    -   Click **Done** in the pop-up window
    
-    -   Select **Visit** table
+    -   Select **Visit** entity
    
     -   Select **Data** tab
    
-    -   Open the View Selector in the top right by clicking the current View name, **Active Visits**
+    -   Open the View Selector in the top right by clicking the current View name, **Visits**
    
-    -   Change the View to **All column**
+    -   Change the View to **All Columns**
    
     -   Locate a Visit record that does not have an Actual Start or Actual End value (i.e., those columns are blank). Select and copy the **Code** for this Visit.
 
@@ -168,7 +160,7 @@ In this task, we will create buttons for the user to check in and check out of t
    
     * In the properties pane, select the **Advanced** tab and select **OnChange** property
    
-    * Enter the following expression `Set(Visit, LookUp(Visits, Code = textCode.Text))`
+    * Enter the following expression `Set(Visit, LookUp(Visits,'Code' = textCode.Text))`
     
     > This will save the visit in a global variable when a user searches in the textCode searchbox. That allows us to use the variable *Visit* throughout the app without the need to re-enter the entire lookup expression.
 
@@ -236,7 +228,7 @@ We would like to enable **Check Out** button when the visit record has been loca
 
 6. Press **F5** to run the app. 
 
-7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox (or click outside of the textbox). The **Check In** button should become enabled. 
+7. Both buttons should be disabled. Enter the code value you copied previously and press **Tab** to move the focus away from the textbox. The **Check In** button should become enabled. 
 
 8. Clear the search box contents.
 
@@ -244,7 +236,7 @@ We would like to enable **Check Out** button when the visit record has been loca
 
 ## Task \#5: Complete Check In and Check Out Process
 
-To perform the check in and check out process we need to update Dataverse visit data as following:
+To perform the check in and check out process we need to update Microsoft Dataverse visit data as following:
 
 * When visitor checks in, set *Actual Start* field to the current date and time
 * When visitor checks out, set *Actual End* field to the current date and time. 
@@ -261,14 +253,14 @@ To perform the check in and check out process we need to update Dataverse visit 
        {'Actual Start': Now()}
    );
    Refresh([@Visits]);
-   Set(Visit, LookUp(Visits, Code = textCode.Text));
+   Set(Visit, LookUp(Visits,'Code' = textCode.Text));
    ```
 
    This expression contains the following parts:
 
    * **Patch(Visits, Visit, {'Actual Start': Now()});**. *Patch* method updates **Visits** entity, the record identified by **Visit** variable (which is the current visit). The expression sets the value of *Actual Start* field to the current date and time (*Now()* method).
    * **Refresh([@Visits]);**. This expression refreshes the visit records as the underlying values have changed
-   * **Set(Visit, LookUp(Visits, Code = textCode.Text));** This expression updates the *Visit* variable with fresh data from Dataverse.
+   * **Set(Visit, LookUp(Visits,' Code' = textCode.Text));** This expression updates the *Visit* variable with fresh data from Microsoft Dataverse.
    
    > When a user clicks this button, the Actual Start of the Visit will be set to the current date and time and the data will refresh.
 
@@ -286,7 +278,7 @@ To perform the check in and check out process we need to update Dataverse visit 
        }
    );
    Refresh([@Visits]);
-   Set(Visit, LookUp(Visits, Code = textCode.Text));
+   Set(Visit, LookUp(Visits,'Code' = textCode.Text));
    ```
 
    When a user clicks this button, the Actual End will be set to the current date and time, the Status of the Visit record will be set to Inactive, and the data will refresh.
@@ -319,7 +311,7 @@ Usability of a mobile app significantly improves when visual indicators are prov
 
 1. Select **Insert** tab
 
-2. Select **Icons \| Add**. Select an Icon. At this point it does not matter which icon we select as we want the value to be dynamic.
+2. Select **Icons \| Add**. At this point it does not matter which icon we select as we want the value to be dynamic.
 
 3. Resize and place the icon to the left of the buttons
 

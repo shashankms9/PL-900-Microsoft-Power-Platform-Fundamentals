@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Lab 2: How to build a canvas app, Part 1'
-    module: 'Module 3: Get started with Power Apps'
----
-
 # Module 3: Get started with Power Apps
 
 ## Lab: How to build a canvas app, Part 1
@@ -42,20 +36,22 @@ We will follow the below outline to design the canvas app:
 
 # Exercise \#1: Create Staff Canvas App
 
+  >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
+
 **Objective:** In this exercise, you will create a canvas app from a template and then modify it to include required data.
 
 ## Task \#1: Create Canvas App
 
-In this task, you will create a canvas app using the phone layout template based on Microsoft Dataverse . Using Visits as a selected table from Dataverse, the template will generate a Gallery - View - Edit app to manage campus visits.
+In this task, you will create a canvas app using the phone layout template based on Microsoft Dataverse. Using Visits as a selected entity from Microsoft Dataverse, the template will generate a Gallery - View - Edit app to manage campus visits.
 
-1.  Start creating an app from data
+1.  Open your Campus Management solution.
 
     -   Sign in to <https://make.powerapps.com>
 
     -   Select your **environment** at the top right if it is not already set to
         your Practice environment.
 
-    -   Select the **Dataverse** icon within **Start from data** on the Home screen.
+    -   Select **Apps**.
 
 2.  Connect to your Visits table
 
@@ -67,7 +63,7 @@ In this task, you will create a canvas app using the phone layout template based
 
 5.  Click **Connect**
 
-6.  The **Welcome to Power Apps Studio** window may appear. Click **Skip**.
+6.  The **Welcome to Power Apps Studio** window may appear. Click **Skip**
 
 7.  Save application
 
@@ -87,11 +83,13 @@ In this task, you will configure the Detail form to view information about indiv
 
 3.  Select **DetailForm1**
 
-4.  Select **Edit fields** next to **Fields** in the right-hand panel.
+4.  Select **Created On** field and press **Del** key to remove the field
 
-5.  Click **Add field**
+5.  Select **Edit fields** next to **Fields** in the right-hand panel.
 
-6.  Select the following fields:
+6.  Click **Add field**
+
+7.  Select the following fields:
 
     * Actual End
     
@@ -107,21 +105,16 @@ In this task, you will configure the Detail form to view information about indiv
     
     * Visitor
     
-7.  Click **Add**
+8.  Click **Add**
 
-8.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
+9.  Rearrange fields in the **Fields** pane by dragging and dropping field names up or down. Recommended order is:
     * Code, Name, Building, Visitor, Scheduled Start, Scheduled End, Actual Start, Actual End
-     >**Tip:** You can collapse each field by clicking the down arrow beside the field name.
-
-9.  Remove the **Created On** field by clicking the ellipses (**...**) beside the field name and selecting **Remove**. 
-
-10.  Close the **Fields** pane.
-  
-11.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
+    
+10.  To preserve work in progress, click **File** then click **Save**. Use the back arrow to return to the app.
 
 ## Task \#3: Configure Visits Edit Form 
 
-In this task, you will configure a form to edit information about individual visit rows.
+In this task, you will configure a form to edit information about individual visit records.
 
 1.  Expand **EditScreen1** under **Tree view**
 
@@ -163,11 +156,11 @@ In this task, you will configure the pre-generated gallery to display the title,
 
 2.  Select **BrowseGallery1**
 
-3.  Select **TemplateSize** property from in the Advanced Properties panel on the right
+3.  Select **TemplateSize** property from in the Properties panel on the right
 
 4.  Replace the expression with the following `Min(150, BrowseGallery1.Height - 60)`. That will ensure sufficient space for additional information.
 
-5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery (however over the app preview and click the pencil icon).
+5.  Edit the gallery by pressing the pencil icon in the top left corner of the gallery (hover over the app preview and click the pencil icon).
 
 6.  Select the Date Time field.
 
@@ -242,7 +235,7 @@ In this exercise you will test the application and, once successful, you will ad
     
     -   Select a visit and verify that display form is working properly
     
-    -   Return to the gallery and press **+** to create a new visit. Verify that edit form contains required columns including visitor, building, and scheduled start and end dates.
+    -   Return to the gallery and press **+** to create a new visit. Verify that edit form contains required fields including visitor, building, and scheduled start and end dates.
     
     -   Fill in the information and submit. Verify that the new record appears in the gallery.
     
@@ -278,7 +271,7 @@ In this exercise you will test the application and, once successful, you will ad
    
 2. Select **Add existing**, then click **App**, and then click **Canvas app**.
 
-3. Select **Outside solutions** tab.
+3. Select **Outside dataverse** tab.
 
 4. Select your **Campus Staff** app, click **Add**.
 
