@@ -90,13 +90,13 @@ We will follow the below steps to design and create the Power BI dashboard:
     
     * In the left navigation page, select Environments, and then open your Practice environment.
     
-    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link**.
+    * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link address**.
     
 2. Open Power BI Desktop, sign in with your provided credentials if prompted.
 
-3. Select **Get data**.
+3. Select **Get data** and then select **more...**.
 
-4. Select **Power Platform** on the left, then select **Microsoft Dataverse**, and press **Connect**.
+4. Select **Power Platform** on the left, then select **Common Data Service (Legacy)**, and press **Connect**. If prompted, sign in with your provided credentials and click **Connect**..
 
 5. Paste the environment URL you copied earlier into the **Server URL** field(default **https://** will be added, remove that), press **OK**.
 
@@ -104,7 +104,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 7. Click **Model** icon on the left vertical toolbar.
 
-8. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between the two entities that Power BI will be able to use to display related data. If already relationship was created ignore this step.
+8. Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between the two tables that Power BI will be able to use to display related data. If already relationship was created ignore this step.
 
 9. Select **Report** icon on the left toolbar.
 
