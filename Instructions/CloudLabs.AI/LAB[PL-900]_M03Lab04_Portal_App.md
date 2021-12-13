@@ -61,7 +61,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   From the command bar, select **New page**
 
-    -   Select **Blank**
+    -   Select **Landing page**
 
 3.  In the properties pane, under **Display** change the **Name** from **New page (1)** to `Building Directory`
 
@@ -81,7 +81,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
 2.  Add Static Text
 
-    -   On the canvas (area showing webpage), select the left column
+    -   On the canvas (area showing webpage), select a section of the page that is not a column.
 
     -   On the toolbelt (left side), select the **Components** icon
 
@@ -101,7 +101,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   Choose **Image** from the **Portal components** area
 
-    -   In the properties pane, click **Select an image**. Locate and select the **Product A.png**
+    -   In the properties pane, click **Select an image**. Locate and select the **Pages.png**
     
     -   In the properties pane, click the **Formatting** section drop-down and change the **Width** to 70% (be sure to type the %). You can play around with the sizing of the image until it is as desired.
    
@@ -209,7 +209,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   On the toolbelt (left side), select the **Themes** icon
     
-    -   Click the toggle for **Enable basic theme** to turn this feature on.
+    -   Ensure that the toggle for **Enable basic theme** is set to on.
     
     -   On one of presets, click the ellipses (**...**) and choose **Customize**
     
