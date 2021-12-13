@@ -48,9 +48,9 @@ The following have been identified as requirements you must implement to complet
     
 2. Click **New** and select **Automation**, **Cloud flow** and then **Automated**. This will open the Power Automate flow editor in a new window.
 
-3. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
+3. In **Choose your flow's trigger**, search for **Microsoft Dataverse**.
 
-4. Select the trigger **When a Row is added, modified or deleted**.
+4. Select the trigger **When a Row is added, modified or deleted**, and then click **Create**
 
    * Select **added** for **Change Type**
    
@@ -62,7 +62,7 @@ The following have been identified as requirements you must implement to complet
 
 5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
 
-6. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector.
+6. Search for **Microsoft Dataverse (Current Environment)** connector.
 
 7. Select **Get a row by ID** action. 
 
@@ -159,9 +159,9 @@ The following have been identified as requirements you must implement to complet
 
 2. Click **New** and select **Automation**, **Cloud flow** and then **Scheduled**. This will open the Power Automate flow editor in a new window.
 
-3. Search for *recurrence*, select **Schedule** connector, and then select the **Recurrence** trigger.
+3. Set the flow to repeat every **15** minutes
 
-4. Set **Interval** to **15 minutes**
+4. Click **Create**.
 
 5. Click **New step**. Search for *Current* and select **Microsoft Dataverse (Current Environment)** connector. Select **List rows** action.
 
