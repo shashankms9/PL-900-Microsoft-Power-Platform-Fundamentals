@@ -156,9 +156,7 @@ Now, we will clone the view to create a new view for today's visits.
     
 2.  Create the Model-Driven Application
 
-    -   Click **New** and select **App** and then **Model-driven app**.
-
-    -   Select **Classic app designer**, click on **Create**. This will open a new tab
+    -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
     
     -   Enter **Campus Management[DeploymentId]** for Name.
     
@@ -208,7 +206,7 @@ Now, we will clone the view to create a new view for today's visits.
     
     -   Enter **Settings** for **Title** in the **Properties** pane.
     
-    -   With the **Settings** Area still selected, click **Add**.
+    -   With the **Settings** group still selected, click **Add**.
     
     -   Select **Subarea**.
     

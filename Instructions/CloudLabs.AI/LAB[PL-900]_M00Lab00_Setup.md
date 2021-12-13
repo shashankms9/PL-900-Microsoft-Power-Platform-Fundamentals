@@ -18,7 +18,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
   >**Note:** You will see **DeploymentId** value on the **Lab Environment** tab, please use it wherever you see DeploymentId in the lab steps. This is a 6 digit unique ID associated with each lab deployment.
 
-### Task 1 - Acquire your Power Platform trial tenant
+### Task 1 - Acquire your Microsoft Power Platform trial tenant
 
 1. Copy your **Microsoft 365 credentials** from the Authorized Lab Hoster.
 
@@ -32,11 +32,11 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 6. Select **Yes** to stay signed in.
 
-7.  Under **Confirmation details**, Click on **Get Started**.
+7. Complete your account info and select **Get started** to sign up for your Microsoft Power Platform trial.
 
 ### Task \#2 – Create environment
 
-1.  Access <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
+1. Access <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
 
 2. Select **Environments** and click **+New.**
 

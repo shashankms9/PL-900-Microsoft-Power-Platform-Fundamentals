@@ -61,7 +61,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
     -   From the command bar, select **New page**
 
-    -   Mouse over **Fixed layouts** and choose **Page with title**
+    -   Select **Blank**
 
 3.  In the properties pane, under **Display** change the **Name** from **New page (1)** to `Building Directory`
 
@@ -73,7 +73,7 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
 
 1.  Add a section to the webpage
 
-    -   On the canvas (area showing webpage), select the **Page Copy** section. This is the large box around the 2 sentences of text in the middle of your page.
+    -   On the canvas (area showing webpage), select the **Page Copy** section. To select them, hover the mouse over the area between the header and the upper section.
 
     -   On the toolbelt (left side), select the **Components** icon
 
@@ -104,8 +104,32 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
     -   In the properties pane, click **Select an image**. Locate and select the **Product A.png**
     
     -   In the properties pane, click the **Formatting** section drop-down and change the **Width** to 70% (be sure to type the %). You can play around with the sizing of the image until it is as desired.
+   
+4. Configure rights to display the the building list 
 
-4.  Click **Browse website** to view the page so far.  Notice that there is now the **Building Directory** option on the main menu.
+    -   From the left menu, click on Settings (gear symbol) and choose **View more settings**. This will open additional settings in a new tab.
+
+    -   In the left menu, scroll down to **Security** and select **Table Permissions**.
+
+    -   Click **New** and add following values:
+
+        -   **Name**: Show Building List
+        -   **Table Name**: From the dropdown on the right side select Building (bc_building)
+        -   **Website**: Click on the Magnifier and select your website (Bellows College Visitors – [your naming])
+        -   **Access Type**: Global
+        -   **Privileges**: Read
+
+    -   From the top menu, select **Save**.
+
+    -   Scroll down to the **Web Roles** section and **Add Existing Web Role**.
+
+    -   Click on the magnifier, select **Anonymous Users** and click **Add**.
+
+    -   From the top menu, select **Save & Close**.
+
+    -   Go back to the previous tab.
+
+5.  Click **Browse website** to view the page so far.  Notice that there is now the **Building Directory** option on the main menu.
 
     > You may need to configure your browser to allow pop-ups.
 
