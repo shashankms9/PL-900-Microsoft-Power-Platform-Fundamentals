@@ -62,8 +62,7 @@ Both will be integrated to the model-driven app for a better user-experience.
 
 5.  Click to open the **Visit** entity.
 
-6.  Select the Forms tab and then from the top left corner **Add form** drop down  select **Main Form** to open the Main form.
-Then expand main form and expand General, then expand General again under Tree view at the top left corner
+6.  Select the **Forms** tab and select the **Main** form type and click **Edit form**.
 
     > By default, the form has two fields: Name (Primary Field) and Owner.
     
@@ -88,8 +87,8 @@ Then expand main form and expand General, then expand General again under Tree v
 
 12.  Click **Publish** at the top right and wait for the publishing to complete.
 
-13.  Click **Back** at the top left of the screen. You should now be back to the
-     Visit entity Views Tab.
+13.  If the edit view opened in a new tab, close the tab. Otherwise, click **Back** at the top left of the screen. You should now be back to the
+     Visit entity Forms Tab.
 
 ## Task \#2: Edit Visit Views
 
@@ -156,7 +155,9 @@ Now, we will clone the view to create a new view for today's visits.
     
 2.  Create the Model-Driven Application
 
-    -   Click **New** and select **App** and then **Model-driven app**. This will open a new tab.
+    -   Click **New** and select **App** and then **Model-driven app**.
+
+    -   In the Model-driven app from blanks screen, click **Create**.
     
     -   Enter **Campus Management[DeploymentId]** for Name.
     
@@ -278,7 +279,7 @@ Now, we will clone the view to create a new view for today's visits.
     -   Enter the fields as following 
     
         -   **Name**: `New test visit`
-        -   **Building**: select Microsoft Building
+        -   **Building**: Alpine Ski House
         -   **Visitor**: select John Doe
         -   **Scheduled Start**: select tomorrow's date and 2:00 PM as start time
         -   **Scheduled End**: select tomorrow's date and 3:30 PM as end time
