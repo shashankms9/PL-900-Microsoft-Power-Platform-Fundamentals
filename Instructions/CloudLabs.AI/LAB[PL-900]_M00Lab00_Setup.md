@@ -20,6 +20,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 ### Task 1 - Acquire your Microsoft Power Platform trial tenant
 
+
 1. Copy your **Microsoft 365 credentials** Provided in the Environmet tab.
 
 1. Open **Microsoft Edge**, Navigate to <https://powerapps.microsoft.com> and click **Start free.**
@@ -28,7 +29,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 1. You see a prompt that you have an existing account with Microsoft. Select **Sign in.**
 
-1. Enter the password provided by the Authorized Lab Hoster. 
+1. Enter the password provided in the Environment tab and click **Sign in**. 
 
 1. Select **Yes** to stay signed in.
 
@@ -36,9 +37,10 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 ### Task \#2 – Create environment
 
+
 1. Access <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
 
-2. Select **Environments** and click **+New.**
+1. Select **Environments** and click **+New.**
 
     - For **Name**, enter **Practice[DeploymentId]** (Example: Practice255365)
     
@@ -50,25 +52,25 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
     
     - On the next tab, leave all selections to default and click **Save.**
 
-3. Your **Practice** environment should now show in the list of Environments. 
+1. Your **Practice** environment should now show in the list of Environments. 
 
     > Your environment may take a few minutes to provision. Refresh the page if needed.
 
 # Exercise \#2: Provision a Power Apps portal
 
-**Objective:** Provisioning a Power Apps portal can take some time. In this exercise, you will create your Power Apps portal in your environment so that the provisioning process can be initiated. You will use this portal in a later lab.
+   **Objective:** Provisioning a Power Apps portal can take some time. In this exercise, you will create your Power Apps portal in your environment so that the provisioning process can be initiated. You will use this portal in a later lab.
 
 ## Task \#1: Create Power Apps portal
 
 1.  Sign in to <https://make.powerapps.com>
 
-2.  If the **Environment** displayed in the top right is not your Practice environment, select your Environment.
+1.  If the **Environment** displayed in the top right is not your Practice environment, select your Environment.
 
-3.  Click on the **Portal from blank** panel under **Make your own app**
+1.  Click on the **Portal from blank** panel under **Make your own app**
 
     > If you do not see this option, try zooming out.
 
-4.  Provide new portal details
+1.  Provide new portal details
 
     -   Enter **Bellows College Visitors** as the portal **Name**
 
