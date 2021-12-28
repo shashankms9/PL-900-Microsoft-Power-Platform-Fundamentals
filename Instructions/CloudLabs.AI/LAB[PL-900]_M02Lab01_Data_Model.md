@@ -148,7 +148,7 @@ We would like to assign each visit a unique number that can be easily entered an
 
 3. Create Scheduled Start field
 
-   * Make sure you have the **Visit** table selected and click **Add Column** from the top left corner.
+   * Make sure you have the **Visit** table opened and click **Add Column** from the top left corner.
    
    * Enter **Scheduled Start** for **Display Name**.
    
