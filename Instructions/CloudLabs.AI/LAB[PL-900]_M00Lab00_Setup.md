@@ -22,7 +22,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 1. Copy your **Microsoft 365 credentials** Provided in the Environmet tab.
 
-1. Navigate to <https://powerapps.microsoft.com> and click **Start free.**
+1. Open **Microsoft Edge**, Navigate to <https://powerapps.microsoft.com> and click **Start free.**
 
 1. Under **Let's get you started**, enter the email address as provided in the environment tab in the text box that says **Enter your work email address** and click on **Next**.
 
