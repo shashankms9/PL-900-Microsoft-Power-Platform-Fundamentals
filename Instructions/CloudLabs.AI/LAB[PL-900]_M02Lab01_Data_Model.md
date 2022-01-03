@@ -144,7 +144,7 @@ We would like to assign each visit a unique number that can be easily entered an
    
    * Enter **Visit** for **Display Name** 
    
-   * Click **Create**. This will start provisioning the entity in background while you can start adding other fields.
+   * Click **save**. This will start provisioning the entity in background while you can start adding other fields.
 
 3. Create Scheduled Start field
 
