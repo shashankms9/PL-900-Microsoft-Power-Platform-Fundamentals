@@ -51,7 +51,7 @@ In this task, you will create a canvas app using the phone layout template based
     -   Select your **environment** at the top right if it is not already set to
         your Practice environment.
 
-    -   Select **Apps**.
+    -   Select **Connection** under **Dataverse** from the left menu.
 
 2.  Connect to your Visits table
 
