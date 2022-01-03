@@ -119,13 +119,9 @@ You are now in the Power Apps portals Studio. This is where you can modify and c
         -   **Access Type**: Global
         -   **Privileges**: Read
 
-    -   From the top menu, select **Save**.
+    -   Scroll down to the **Roles** section and Select **Add Role**.
 
-    -   Scroll down to the **Web Roles** section and **Add Existing Web Role**.
-
-    -   Click on the magnifier, select **Anonymous Users** and click **Add**.
-
-    -   From the top menu, select **Save & Close**.
+    -   Click on the magnifier, select **Anonymous Users** and click **Save**.
 
     -   Go back to the previous tab.
 
