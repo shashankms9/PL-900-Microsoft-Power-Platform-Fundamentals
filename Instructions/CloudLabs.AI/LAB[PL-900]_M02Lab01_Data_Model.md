@@ -117,8 +117,7 @@ between the entities.
 
     * Sign in to <https://make.powerapps.com> (if you are not already signed in)
     
-    * Select **Solutions** and click to open the **Campus Management[DeploymentId]**
-          solution you just created.
+    * Select **Solutions** and click to open the **Campus Management[DeploymentId]** solution you just created.
           
 2.  Create Building entity
 
