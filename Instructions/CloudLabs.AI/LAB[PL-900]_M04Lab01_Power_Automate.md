@@ -58,7 +58,7 @@ The following have been identified as requirements you must implement to complet
    
    * Select **Organization** for **Scope**
    
-   * On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **"When a visit is added"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+   * On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **"When a visit is created"**. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
 
 5.  Click **New Step**. This step is required to retrieve visitors information, including email address.
 
@@ -117,7 +117,7 @@ The following have been identified as requirements you must implement to complet
 
 3.  Leaving this tab open, navigate back to the previous tab with your flow. 
 
-4.  On the command bar, click **Test**. Select **Manually** under Test Flow and then **Save & Test**.
+4.  On the command bar, click **Test**. Select **Manually** under Test Flow and then **Test**.
 
 5.  Leaving the flow tab open, navigate back to the previous tab with the **Campus Staff** app.
 
@@ -237,9 +237,12 @@ The following have been identified as requirements you must implement to complet
      Campus Security
      ```
 
-14.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
 
-15.  Press **Save**
+14.  On the trigger step, click the ellipsis (**...**) and click **Rename**. Rename this trigger **Send an email notification (V3)**.
+
+15.  Select flow name **Untitled** in the upper left corner and rename it to **Security Sweep**
+
+16.  Press **Save**
 
     Your flow should look approximately like the following:
 
