@@ -55,7 +55,7 @@ In this task, you will create a canvas app using the phone layout template based
 
 2.  Connect to your Visits table
 
-    -   Select **+ New connection**
+    * Select **+ New connection**
 
 3.  Select **Microsoft Dataverse** connection then click **Create**.
 
