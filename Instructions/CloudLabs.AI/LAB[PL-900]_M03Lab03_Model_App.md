@@ -219,15 +219,13 @@ Now, we will clone the view to create a new view for today's visits.
 
 9.  Click **Publish** to publish the sitemap and wait for the publishing to complete.
 
-10.  Click **Save and Close** to close the sitemap editor. 
-
-    > You will see the assets for the entities that were added to the sitemap are now in the application.
+10.  Click **Save and Close** to close the sitemap editor, You will see the assets for the entities that were added to the sitemap are now in the application.
      
 11.  Click on **Save** on the App Designer
 
-12.  Click on **Validate** to validate the changes done in the application. 
+12.  Click on **Validate** to validate the changes done in the application.
 
-    >  This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
+   **Note**: This will show some warnings but we can ignore them, since we have not referenced a specific View and Form for the entities and the users will have access to all the Views and Forms for **Visit** and **Building** entities.
      
 13.  Click **Save and Close** to close the app designer.
 
