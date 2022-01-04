@@ -55,7 +55,7 @@ You will follow the below outline to design the canvas app:
 
     -   Click **New** and select **App \| Canvas App**.
 
-    -   Enter **[Your Last Name] Campus Security** for Name.
+    -   Enter **Campus Security[Deployment-ID]** for Name.
 
     -   Select **Phone** as form factor and click **Create**.
         This will open the App Editor.
