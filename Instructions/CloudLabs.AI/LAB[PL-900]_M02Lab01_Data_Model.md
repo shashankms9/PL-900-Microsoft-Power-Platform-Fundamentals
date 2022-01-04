@@ -121,11 +121,11 @@ between the entities.
           
 2.  Create Building entity
 
-    -   Click **New** and select **Table**.
+    * Click **New** and select **Table**.
     
-    -   Enter **Building** for **Display Name** 
+    * Enter **Building** for **Display Name** 
     
-    -   Click **save**. This will start provisioning the entity in background while you can start adding other entities and fields.
+    * Click **save**. This will start provisioning the entity in background while you can start adding other entities and fields.
 
 ## Task #2: Create Visit Entity and Fields
 
@@ -301,7 +301,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 3. If **Status** is **Off**, select **...** next to **Import Data** then select **Turn On**.
 
-   > **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
+    **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
 
 4. Open **Import Data** component. A new tab will open Power Automate. 
 
