@@ -267,15 +267,7 @@ In this task you will import a solution that contains the Power Automate flow re
 
 4. Select **Solutions** in the left navigation panel.
 
-5. Click **Import**, then click **Browse**. Browse and select **DataImport_managed.zip** from your Desktop, and then press **Next**.
-
->   You may receive the following message:
->
->   There are missing dependencies. Install the following solutions before installing this one...
->
->   That message indicates that either the data model is not complete, the
->   publisher prefix is not **bc**, or the **Building** and **Visit** entity
->   names differ from the names listed in the steps above.
+5. Click **Import**, then click **Browse**. Browse and select **DataImport_managed.zip** from C:\AllFiles\PL-900-Microsoft-Power-Platform-Fundamentals-master\Allfiles, and then press **Next**.
 
 6. Press **Next**. You should be prompted to re-establish connections. 
 
