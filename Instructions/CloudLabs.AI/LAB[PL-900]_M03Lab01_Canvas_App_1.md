@@ -51,7 +51,9 @@ In this task, you will create a canvas app using the phone layout template based
     -   Select your **environment** at the top right if it is not already set to
         your Practice environment.
 
-    -   Select **Connection** under **Dataverse** from the left menu.
+    -   Select **+Create** from the left menu.
+
+    -  Select **Dataverse**.
 
 2.  Connect to your Visits table
 
@@ -67,7 +69,7 @@ In this task, you will create a canvas app using the phone layout template based
 
 7.  Save application
 
-    -   Click **File \> Save**.
+    -   Click **File \> Save as**.
 
     -   Enter **Campus Staff[DeploymentId]** as the **Name**.
 
@@ -267,7 +269,7 @@ In this exercise you will test the application and, once successful, you will ad
    
    * Select **Solutions**.
    
-   * Click to open your **Campus Management** solution.
+   * Click to open your **Campus Management[DeploymentId]** solution.
    
 2. Select **Add existing**, then click **App**, and then click **Canvas app**.
 
