@@ -20,9 +20,6 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 ### Task 1 - Acquire your Microsoft Power Platform trial tenant
 
-
-1. Copy your **Microsoft 365 credentials** Provided in the Environmet tab.
-
 1. Open **Microsoft Edge**, Navigate to <https://powerapps.microsoft.com> and click **Start free.**
 
 1. Under **Let's get you started**, enter the email address as provided in the environment tab in the text box that says **Enter your work email address** and click on **Next**.
@@ -36,7 +33,6 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 1. Complete your account info and select **Get started** to sign up for your Microsoft Power Platform trial.
 
 ### Task \#2 – Create environment
-
 
 1. Access <https://admin.powerplatform.microsoft.com> and log in with your Microsoft 365 credentials if prompted again.
 
@@ -66,9 +62,7 @@ In this Module 0 lab, you will acquire a Power Platform trial tenant and access 
 
 1.  If the **Environment** displayed in the top right is not your Practice environment, select your Environment.
 
-1.  Click on the **Portal from blank** panel under **Make your own app**
-
-    > If you do not see this option, try zooming out.
+1.  Search for **Portal** and select the **Portal from blank** from the results
 
 1.  Provide new portal details
 
