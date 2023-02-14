@@ -1,357 +1,240 @@
 ---
 lab:
     title: 'Lab 1: Data Modeling'
-    module: 'Module 2: Introduction to Common Data Service'
+    module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# Module 2: Introduction to Common Data Service
-## Lab: Data Modeling
+# Lab 1: Data Modeling
 
-### Important Notice (Effective November 2020):
-Common Data Service has been renamed to Microsoft Dataverse. Some terminology in Microsoft Dataverse has been updated. For example, entity is now table. Fields and records in Dataverse databases are now referred to as columns and rows.
+## Scenario
 
-While the applications are in the process of updating their user experience, some references to terminology for Microsoft Dataverse like entity (now **table**), field (now **column**), and record (now **row**) may be out of date. Please keep this in mind as you work through the labs. We expect to have our content fully up to date very soon. 
-
-For more information and for a complete list of affected terms, please visit [What is Microsoft Dataverse?](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro#terminology-updates)
-
-# Scenario
-
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus. 
+Bellows College is an educational organization with multiple buildings on
+campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 Campus administration would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
 
-Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus. 
+Throughout this course, you will build applications and perform automation to enable the Bellows College administration and security personnel to manage and control access to the buildings on campus.
 
-In this lab, you access your environment, create a Common Data Service (CDS) database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+In this lab you will access your environment, create a Microsoft Dataverse database. You will also create a data model to support the following requirements:
 
--   R1 – Track the locations (buildings) of the campus visits
--   R2 – Record basic information to identify and track the visitors 
--   R3 – Schedule, record, and manage visits 
+- R1 – Track information for scheduled campus visits
 
-Finally, you will import sample data into Common Data Service.
+- R2 – Record basic information to identify and track the visitors
 
-# High-level lab steps
+- R3 – Schedule, record, and manage visits
+
+Finally, you will import sample data into Microsoft Dataverse.
+
+
+## High-level lab steps
 
 To prepare your learning environments you will:
 
-* create a solution and publisher
-* add both new and existing components required to meet the application requirements. Refer to the [data model document](../../Allfiles/Campus%20Management.png) for the metadata description (entities and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+- Refer to the [data model document](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png) for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+- create Visit table
+- import Visit data using an Excel spreadsheet
 
-Your solution will contain several entities upon completion of all the customizations:
+## Prerequisites
 
--   Contact
--   Building
--   Visit
+- Completion of **Module 0 Lab 0 - Validate lab environment**
 
-## Prerequisites:
+## Things to consider before you begin
 
-* Completion of **Module 0 Lab 0 - Validate lab environment**
+- Naming conventions - type names carefully.
 
-## Things to consider before you begin:
 
-* Naming convention
+## Exercise 1: Create New Table
 
-* Data types, restrictions (e.g. max length of a name)
+**Objective:** In this exercise, you will create new custom table for Visits.
 
-* Datetime formatting to support easy localization
 
-# Exercise \#1: Create Solution
+### Task \#1: Create Visit Table and Columns
 
-## Task \#1: Create Solution and Publisher
-
-1.  Create Solution
-
-    -   Navigate to <https://make.powerapps.com>. You may need to reauthenticate - click **Sign in** and follow instructions if needed.
-
-    -   Select your environment by clicking on **Environment** on the upper right corner of the screen and choosing your environment from the drop-down menu.
-
-    -   Select **Solutions** from the left menu and click **New Solution**.
-
-    -   Enter **[Your Last Name] Campus Management** for **Display Name**.
-
-2.  Create Publisher
-
-    -   Click on the **Publisher** dropdown and select **+ Publisher**
-
-    -   In the window that pops up, enter **Bellows College** for **Display Name** 
-    
-    -   Enter **bc** for **Prefix**
-
-    -   Click **Save and Close**
-    
-    -   Click **Done** in the pop-up window.
-
-3.  Complete the solution creation.
-
-    -   Now, click on the **Publisher** dropdown and select the **Bellows College**
-        publisher you just created.
-
-    -   Validate that **Version** is set to **1.0.0.0** 
-    
-    -   Click **Create**.
-
-## Task \#2: Add Existing Entity
-
-1.  Click to open your **Campus Management** solution you just created.
-
-2.  Click **Add Existing** and select **Entity**.
-
-3.  Locate **Contact** and select it.
-
-4.  Click **Next**.
-
-5.  Click **Select Components** under Contact.
-
-6.  Select the **Views** tab and select the **Active Contacts** view. Click
-    **Add**.
-    
-7.  Click **Select Components** again.
-
-8.  Select the **Forms** tab and select the **Contact** form.
-    
-9.  Click **Add**.
-
-    > You should have **1 View** and **1 Form** selected. 
-    
-10.  Click **Add** again. This will add the Contact entity with the selected View and Form to the newly created solution. 
-    
-11.  Your solution should now have one entity: Contact.
-
-# Exercise \#2: Create Entities and Relationships
-
-**Objective:** In this exercise, you will create entities and add relationships
-between the entities.
-
-## Task #1: Create Building Entity and Fields
-
-1.  You should still have your browser open to your Campus Management solution. If not, open the Campus Management solution by following these steps:
-
-    * Sign in to <https://make.powerapps.com> (if you are not already signed in)
-    
-    * Select **Solutions** and click to open the **[Your Last Name] Campus Management**
-          solution you just created.
-          
-2.  Create Building entity
-
-    -   Click **New** and select **Entity**.
-    
-    -   Enter **Building** for **Display Name** 
-    
-    -   Click **Done**. This will start provisioning the entity in background while you can start adding other entities and fields.
-
-## Task #2: Create Visit Entity and Fields
-
-The **Visit** entity will contain information about the campus visits including the building, visitor, scheduled and actual time of each visit. 
+The **Visit** table will contain information about the campus visits including the visitor, scheduled times and actual times of each visit.
 
 We would like to assign each visit a unique number that can be easily entered and interpreted by a visitor when asked during the visit check-in process.
 
-> We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the building and should not change when viewed from a different time zone. 
+> We use **Time zone independent** behavior to record date and time information, because time of a visit is always local to the location of the  building and should not change when viewed from a different time zone.
 
-1.  Select your **Campus Management** solution
+1. Sign into [https://make.powerapps.com](https://make.powerapps.com/) (if you are not already signed in)
 
-2. Create Visit entity
+1. Select your **[my initials] Practice** environment at the top right if it is not already selected.
 
-   * Click **New** and select **Entity**.
-   
-   * Enter **Visit** for **Display Name** 
-   
-   * Click **Done**. This will start provisioning the entity in background while you can start adding other fields.
+1. Using the navigation on the left, expand **Dataverse**, and select **Tables**.
 
-3. Create Scheduled Start field
+1. Click **+ New table**.
 
-   * Make sure you have the **Fields** tab selected and click **Add Field**.
-   
-   * Enter **Scheduled Start** for **Display Name**.
-   
-   * Select **Date and Time** for **Data Type**.
-   
-   * In the **Required** field, select **Required**.
-   
-   * Expand **Advanced options** section.
-   
-   * In the **Behavior** field, select **Time zone independent**.
-   
-   * Click **Done**.
+1. Enter **Visit** for **Display Name**.
 
-4.  Create Scheduled End field
+1. Click **Save**.
 
-    * Click **Add Field**.
-    
-    * Enter **Scheduled End** for **Display Name**.
-    
-    * Select **Date and Time** for **Data Type**.
-    
-    * In the **Required** field, select **Required**.
-    
-    * Expand **Advanced options** section.
-    
-    * In the **Behavior** field, select **Time zone independent**.
-    
-    * Click **Done**.
-    
-5.  Create Actual Start field
+1. Under the **Schema** section, select **Columns**.
 
-    * Click **Add Field**.
-    
-    * Enter **Actual Start** for **Display Name**.
-    
-    * Select **Date and Time** for **Data Type**.
-    
-    * In the **Required** field, leave this as **Optional**.
-    
-    * Expand **Advanced options** section.
-    
-    * In the **Behavior** field, select **Time zone independent**.
-    
-    * Click **Done**.
-    
-6.  Create Actual End field
+1. Create  Scheduled Start column
 
-    * Click **Add Field**.
-    
-    * Enter **Actual End** for **Display Name**.
-    
-    * Select **Date and Time** for **Data Type**.
-    
-    * In the **Required** field, leave this as **Optional**.
-    
-    * Expand **Advanced options** section.
-    
-    * In the **Behavior** field, select **Time zone independent**.
-    
-    * Click **Done**.
-    
-7.  Create Code field
+	- Select **+ New column**.
 
-    * Click **Add Field**.
-    
-    * Enter **Code** for **Display Name**.
-    
-    * Select **Autonumber** for **Data Type**.
-    
-    * Select **Date prefixed number** for **Autonumber type**.
-    
-    * Click **Done**.
-    
-8.  Click **Save Entity**
+	- Enter **Scheduled Start** for **Display name**.
 
-## Task #3: Create Relationships
+	- Select **Date and Time** for **Data type**.
 
-1.  Ensure that you are still viewing the **Visit** entity of your **Campus Management** solution. If not, navigate there.
+	- In **Required**, select **Business required**.
 
-2.  Create Visit to Contact relationship
+	- Expand **Advanced options**.
 
-    * Select the **Relationships** tab.
-    
-    * Click **Add Relationship** and select **Many-to-one**
-    
-    * Select **Contact** for **Related (One)** 
-    
-    * Enter **Visitor** for **Lookup field display name** 
-    
-    * Click **Done**.
-    
-3.  Create Visit to Building relationship
+	- In **Time zone adjustment**, select **Time zone independent**.
 
-    * Click **Add Relationship** and select **Many-to-one**
-    
-    * Select **Building** for **Related (One)** 
-    
-    * Click **Done**.
-    
-4.  Click **Save Entity**.
+	- Click **Save**.
 
-5.  Select **Solutions** from the top menu and click **Publish all customizations.**
+1. Create Scheduled End column
 
-# Exercise \#3: Import Data
+	- Click **+ New column**.
 
-**Objective:** In this exercise you will import sample data into the Common Data Service database.
+	- Enter **Scheduled End** for **Display name**.
 
-## Task #1: Import solution
+	- Select **Date and Time** for **Data type**.
 
-In this task you will import a solution that contains the Power Automate flow required to complete data import.
+	- In **Required**, select **Business required**.
 
-1. You should have the **DataImport_managed.zip** file store on your Desktop. Download [Data Import Solution](../../Allfiles/DataImport_managed.zip) if you do not.
+	- Expand **Advanced options**.
 
-2. Sign in to <https://make.powerapps.com>.
+	- In **Time zone adjustment**, select **Time zone independent**.
 
-3. Select your **[my initials] Practice** environment at the top right, if it is not already selected.
+	- Click **Save**.
 
-4. Select **Solutions** in the left navigation panel.
+1. Create Actual Start column
 
-5. Click **Import**, then click **Browse**. Browse and select **DataImport_managed.zip** from your Desktop, and then press **Next**.
+	- Click **+ New column**.
 
->   You may receive the following message:
->
->   There are missing dependencies. Install the following solutions before installing this one...
->
->   That message indicates that either the data model is not complete, the
->   publisher prefix is not **bc**, or the **Building** and **Visit** entity
->   names differ from the names listed in the steps above.
+	- Enter **Actual Start** for **Display name**.
 
-6. Press **Next**. You should be prompted to re-establish connections. 
+	- Select **Date and Time** for **Data type**.
 
-7. Expand the **Select a connection** dropdown and select **+ New Connection**.
+	- In **Required**, leave this as **Optional.**
 
-8. The new browser window or tab will open. Select **Create** when prompted to create Common Data Service connection. Sign in if required to complete creating the connection.
+	- Expand **Advanced options**.
 
-9. Switch back to the previous tab where you were importing the solution.
+	- In **Time zone adjustment**, select **Time zone independent**.
 
-10. Click **Refresh** to refresh the list of connections. 
+	- Click **Save**.
 
-11. Ensure the connection you just created is selected.
+1. Create Actual End column
 
-12. Press **Import**.
+	- Click **+ New column**.
 
-13. Wait until the import is complete.
+	- Enter **Actual End** for **Display name**.
 
-## Task #2: Import Data  
+	- Select **Date and Time** for **Data type**.
 
-1. Open **Data Import** solution.
+	- In **Required**, leave this as **Optional**.
 
-2. Check the **Status** of the **Import Data** flow.
+	- Expand **Advanced options**.
 
-3. If **Status** is **Off**, select **...** next to **Import Data** then select **Turn On**.
+	- In **Time zone adjustment**, select **Time zone independent**.
 
-   > **Important:** If you receive an error message, verify that the entities and fields you created match the instructions above.
+	- Click **Save**.
 
-4. Open **Import Data** component. A new tab will open Power Automate. 
+1. Create Code column
 
-5. Click **Get Started** if presented with a popup. 
+	- Click **+ New column**.
 
-6. Click **Run** then click **Run flow** when prompted.
+	- Enter **Code** for **Display name**.
 
-7. Click **Done**.
+	- Select **Autonumber** for **Data type**.
 
-8. Wait until the flow instance completes the run. You can refresh the **28-day run history** table to see when the flow has run. 
+	- Select **Date prefixed number** for **Autonumber type**.
 
-    > The purpose of this flow was to generate example data for the upcoming labs. In the next task, you will verify that the data import was successful. 
+	- Click **Save**.
 
-## Task #3: Verify Data Import
+1. Create Visitor lookup column
 
-1. Navigate back to the previous Power Apps tab. Click **Done** on the popup. Select **Solutions** on the left navigation bar and open your **Campus Management** solution.
+	- Click **+ New column**.
 
-2. Click to open the **Visit** entity, then select the **Data** tab.
+	- Enter **Visitor** for **Display name**.
 
-3. Click **Active Visits** in the top right-hand corner to display the view selector, then select **All fields**. This will change the view that is being used to display the Visit data. 
+	- Select **Lookup** for **Data type**.
 
-    > If you do not see **Active Visits** due to smaller resolution, you should see an eye icon in the same location.
+	- Select **Contact** for the **Related Table**.
 
-    > If the import was successful, you should see a list of visit entries.
+	- Expand **Advanced options**.
 
-4. Click on any value in the **Building** column, confirm that the Building form opens in a separate window. 
+	- Enter **visitor_id** for **Relationship name**.
 
-5. Close the recently launched window.
+	- Click **Save**.
 
-6. Click on any value in the **Visitor** column (you may need to scroll the view to the right), confirm that the Contact form opens in a separate window.
+## Exercise 2: Import Data
 
-7. Close the recently launched window.
+**Objective:** In this exercise you will import sample data into the Dataverse database.
 
-# Challenges
+### Task \#1.1: Load Excel file to OneDrive
 
-* Would you consider using *appointment* activity as part of the solution? What would it change?
-* How could you enforce the scheduled end to be after the scheduled start? 
-* How could you add support for multiple meetings during a single visit?
-* How could you secure the building access not only for external contacts but for internal staff member as well?
-* How could you make visits to certain buildings require management approval? What would the approval process change in the data model?
+1. You should have the **Visits.xlsx** file stored on your virtual machine in **C:/LabFiles**. Download [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) if you do not.
 
+2. If not already signed in, sign in to [https://make.powerapps.com](https://make.powerapps.com/).
+
+3. Select your **[my initials] Practice** environment at the top right if it is not already selected.
+
+4. Click on the Waffle button in the upper left corner to change applications and select **OneDrive**. (It may take a moment for your OneDrive to be set up. Click **Your OneDrive is ready** when you see it on the screen.)
+
+5. Click **Upload** from the top menu and select **Files**.
+
+6. Locate and select the **Visits.xlsx** file and click **Open**.
+
+ **Note:** This file is located in the **All Files** folder on your machine.
+ 
+### Task \#1.2: Create a dataflow
+
+1. If not already signed in, sign in to [https://make.powerapps.com](https://make.powerapps.com/).
+
+2. Select your **[my initials] Practice** environment at the top right if it is not already selected.
+
+3. Using the navigation on the left, expand **Dataverse**, and select **Tables**.
+
+4. Locate and open the **Visit** table you created in the previous exercise.
+
+5. Using the menu at the top, select the drop-down arrow next to **Import**, select the **Import data**.
+
+6. In the **Choose data source** dialog, select **Excel workbook**.
+
+7. Select **Link to File** option. Click **Browse OneDrive**. If prompted, sign in with your Microsoft 365 credentials.
+
+8. Select the **Visits.xlsx** file which has been uploaded in OneDrive and click **Select**.
+
+9. Click **Next**.
+
+10. Under **Choose Data** check the box next to the **Visits** Excel workbook.
+
+11. Click **Next**. Do not navigate away from this page.
+
+12. Click **Next**.
+
+13. On the **Map tables** section, select **Load to existing table** under the **Load settings**.
+
+14. On the **Destination table** drop-down menu, Select the table name starts with **crXXX_visit** (where XXX is a random set of letters and numbers)
+
+15. On the **Column Mapping**. Map the Columns to their corresponding destination columns.
+
+| Destination columns  | Source values   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | actual end      |
+| crxxx_ActualStart    | actual start    |
+| crxxx_Code           | code            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | scheduled end   |
+| crxxx_ScheduledStart | scheduled start |
+
+16. Click **Next**.
+
+17. Select **Refresh manually**.
+
+18. Click **Publish**.
+
+**Note:** It can take several minutes for your data to import into your table. Don’t worry if you get a few errors, that is normal, and will not impact the rest of the course.
+
+### Task \#3: Verify Data Import
+
+1. After your data has been imported, use the navigation at the left of the screen to select the **Visit** table again.
+
+2. Verify that you see the imported data under the **Visit columns and data** section.
+
+Congratulations, you have successfully created a new table and imported data.
