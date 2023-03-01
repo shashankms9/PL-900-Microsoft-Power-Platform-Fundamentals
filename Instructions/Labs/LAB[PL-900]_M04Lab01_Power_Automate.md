@@ -42,7 +42,7 @@ the unique code assigned to the visit when a visit is created.
 
 1.  Navigate to <https://make.powerapps.com>. You may need to reauthenticate - click **Sign in** and follow instructions if needed.
 
-2.  Select your **[my initials] Practice** environment at the top right if it is
+2.  Select your **Practice[DeploymentId]** environment at the top right if it is
     not already selected.
 
 3.  In the left navigation, select **Flows**.
